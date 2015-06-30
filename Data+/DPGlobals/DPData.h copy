@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------------ 
+
+	Title: DPData
+
+	Description:  Data structures and handling for Data+
+
+	Author :
+		Stephen Wardlaw, M.D.
+		Medical Research & Development
+		Highrock
+		Lyme, CT 06371
+
+	Edit History:	
+		16 August, 1999
+			Created
+		
+------------------------------------------------------------------ */ 
+
+#ifndef _DPData
+#define _DPData
+
+#include "DPDataRec.h"
+#include "DPDataType.h"
+
+#include <SupportKit.h>
+
+// String constants for archiving
+const char data_type_str[8]	= "dptypes";
+const char data_rec_str[8]		= "dprecs";
+
+class DPData : public BArchivable {
+
+	public :
+		enum {
+			fld_code = 'DPda',
+			max_set_name = 31
+		};
+		
+	static BArchivable*
+		Instantiate(BMessage* theArchive);
+	
+		DPData();
+		
+		DPData(BMessage* theArchive);
+		
+	virtual
+		~DPData();
+		
+	void
+		AddField(DPDataType* theFld) {mFieldTypes->AddItem(theFld); mNumFields++;}
+		
+	void
+		AddRecord(DPDataRec* theRec);
+		
+	status_t
+		Archive(BMessage* theArchive, bool deep = true) const;
+		
+	bool
+		CombineWithNext() {return mCombine;}
+		
+	DPDataRec*
+		CurrentRec() {return mCurrRec;}
+		
+	DPDataRec*
+		DataRecord(int32 recNum) {return (DPDataRec*)mData->ItemAt(recNum);}
+		
+	DPDataType*
+		FieldType(int16 fldNum) {return (DPDataType*)mFieldTypes->ItemAt(fldNum);}
+		
+	bool	// Find a record by its key
+		FindRecord(record_key recKey);	
+		
+	bool	// Find a record by its name and index
+		FindRecord(const char* recName, int16 index = 0);
+		
+	bool	// Find a record by its sequence
+		FindRecord(int32 recNum);
+		
+	record_key
+		Key() const {return mKey;}
+		
+	int32
+		NumFields() {return mFieldTypes->CountItems();}
+		
+	int32
+		NumRecords() {return mData->CountItems();}
+		
+	void
+		SetCombine(bool combine) {mCombine = combine;}
+		
+	void
+		SetSetName(const char* name) {::strncpy(mSetName,name,max_set_name);}
+		
+	const char*
+		SetName() {return mSetName;}
+		
+	void
+		SetXYZFields(int16 xFld, int16 yFld, int16 zFld);
+		
+	int16
+		XField() {return mXField;}
+	int16
+		YField() {return mYField;}
+	int16
+		ZField() {return mZField;}
+	
+	// All these operate off of the 'current' record	
+	bool
+		XValue(float &val);
+	bool
+		YValue(float &val);
+	bool
+		ZValue(float &val);
+		
+	protected :	// Data
+		char		mSetName[max_set_name + 1];
+		record_key	mKey;
+		record_key	mMaxKey;
+		record_key	mMinKey;
+		DPDataRec*	mCurrRec;
+		BList*		mFieldTypes;
+		BList*		mData;
+		int16		mXField;
+		int16		mYField;
+		int16		mZField;
+		int16		mNumFields;
+		bool		mCombine;
+};
+
+#endif

@@ -1,0 +1,100 @@
+/* ------------------------------------------------------------------ 
+
+	Title: DMRWindow
+
+	Description:  The graph window
+
+	Author :
+		Stephen Wardlaw, M.D.
+		Medical Research & Development
+		Highrock
+		Lyme, CT 06371
+
+	Edit History:	
+		18 April, 2001
+			Created
+		
+------------------------------------------------------------------ */ 
+
+#ifndef _DMRWindow
+#define _DMRWindow
+
+#include "DMStatView.h"
+#include <InterfaceKit.h>
+
+class DMRWindow : public BWindow {
+
+	public:
+		DMRWindow(BRect frame); 
+		
+	virtual
+		~DMRWindow();
+		
+	virtual void
+		MessageReceived(BMessage* theMessage);
+		
+	protected :	// Methods
+	
+	bool
+		CheckSave();
+		
+	void
+		CreateOpenPanel();
+		
+	void
+		CreateSavePanel();
+		
+	void
+		LoadRegrData();
+		
+	virtual void
+		MenusBeginning();
+	
+	void
+		OpenFile(BMessage* theMesg);
+		
+	void
+		Print();
+		
+	void
+		Save();
+		
+	void
+		SaveAsFile(BMessage* theMesg);
+		
+	status_t
+		SetUpPage();
+		
+	virtual	bool	
+		QuitRequested();
+		
+	void
+		UnmarkAll(EDataStatus chgStatus);
+		
+	protected:	// Data
+		BRect			mPaperRect;
+		BRect			mPrintableRect;
+		BScrollView*	mHorizScroll;
+		BScrollView*	mVertScroll;
+		BFile*			mFile;
+		BFilePanel*		mOpenPanel;
+		BFilePanel*		mSavePanel;
+		BMenuItem*		mSaveItem;
+		BMenuItem*		mSaveAsItem;
+		BMenuItem*		mPrintItem;
+		BMenuItem*		mAllowMarkItem;
+		BMenuItem*		mUnMarkItem;
+		BMenuItem*		mUnSuppressItem;
+		BMenuItem*		mUnDeleteItem;
+		BMessage*		mDocData;
+		DPData*			mData;
+		BView*			mMainView;
+		DMStatView*		mStatView;
+		int16			mNumFlds;
+		char			mFileName[64];
+		BPath			mAppPath;
+		bool			mAllowMarking;
+};
+
+#endif
+

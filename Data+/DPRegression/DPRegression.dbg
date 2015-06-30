@@ -1,0 +1,8 @@
+# window positions
+pos:team:208,210,932,708
+pos:brkp:100,100,200,200
+# breakpoints
+OpenFile__12DRRegrWindowPC9entry_refb;372;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPRegression/DRRegrWindow.cpp;1;1;
+__6DPDataP7BDataIO;167;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPData.cp;1;1;
+__6DPDataP7BDataIO;184;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPData.cp;1;1;
+Rescale__10DRRegrPlot;77;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPRegression/DRRegrPlot.cp;1;1;

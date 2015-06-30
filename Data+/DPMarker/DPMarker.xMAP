@@ -1,0 +1,675 @@
+File:    1	"MWOBPPC "
+File:    7	"libbe.so"
+File:    8	"libroot.so"
+File:    9	"/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+File:   11	"/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+File:   12	"/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+File:   13	"/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+File:   19	"/boot/home/develop/dataplus/SWClasses/Utilities/U_Conversions.c"
+File:   20	"/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+
+Files that were not referenced:
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataItem.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+"/boot/home/develop/dataplus/SWClasses/Utilities/URealFmt_Utils.c"
+"/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+
+Code section, size = 9708 bytes
+000000	PR 	.__sinit									file = "*Linker-Generated*"
+000020	PR 	.__destroy_global_chain						file = "common/global_destructor_chain.c"
+000074	PR 	.__RTOC										file = "common/init_term_dyn.c"
+00007C	PR 	._init_routine_
+00012C	PR 	._term_routine_
+0001BC	PR 	.__start									file = "common/start_dyn.c"
+000250	PR 	.main										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+0002A8	PR 	.__dt__8DPMarkerFv
+000318	PR 	.__ct__8DPMarkerFv
+00035C	PR 	.MessageReceived__8DPMarkerFP8BMessage
+00040C	PR 	.__ct__13WColorControlF5BRectPCcPCcP8BMessage	file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+0004F0	PR 	.__ct__5BRectFv
+00050C	PR 	.__dt__13WColorControlFv
+000584	PR 	.Draw__13WColorControlF5BRect
+0007B0	PR 	.InRect__13WColorControlF6BPoint
+000840	PR 	.MouseDown__13WColorControlF6BPoint
+000970	PR 	.MouseMoved__13WColorControlF6BPointUlPC8BMessage
+000B00	PR 	.MouseUp__13WColorControlF6BPoint
+000C64	PR 	.ResizeToPreferred__13WColorControlFv
+000F28	PR 	.ColorValue__13WColorControlFv
+000F6C	PR 	.__sinit_WColorControl_cp
+000FBC	PR 	.@164@Invoke__8BControlFP8BMessage
+000FD4	PR 	.@164@__dt__13WColorControlFv
+000FDC	PR 	.__ct__12DPMarkWindowFP8BMessage5BRectPCc11window_look11window_feelUl	file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+0016F0	PR 	.MessageReceived__12DPMarkWindowFP8BMessage
+001850	PR 	.__dt__12DPMarkWindowFv
+0018C0	PR 	.__ct__10DPDataListFP8BMessage5BRectPCc14list_view_typeUlUl	file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+001A34	PR 	.GetPreferredSize__10DPDataListFPfPf
+001AB4	PR 	.ResizeToPreferred__10DPDataListFv
+001B3C	PR 	.__dt__10DPDataListFv
+001BB4	PR 	.@164@Invoke__9BListViewFP8BMessage
+001BCC	PR 	.@164@__dt__10DPDataListFv
+001BD4	PR 	.ColorToValue__F9rgb_color					file = "/boot/home/develop/dataplus/SWClasses/Utilities/U_Conversions.c"
+001C04	PR 	.ValueToColor__Fl
+001C50	PR 	.BroadcastToClients__FPCcP8BMessage			file = "/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+001E04	GL 	.get_image_symbol							file = "*Linker-Generated*"
+001E1C	GL 	.__register_fragment
+001E34	GL 	.find_thread
+001E4C	GL 	._call_init_routines_
+001E64	GL 	.__ct__12BApplicationFPCc
+001E7C	GL 	.__dt__12BApplicationFv
+001E94	GL 	.__dl__FPv
+001EAC	GL 	.__nw__FUl
+001EC4	GL 	.__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+001EDC	GL 	.__dt__7BWindowFv
+001EF4	GL 	.__nw__8BMessageFUl
+001F0C	GL 	.__ct__8BMessageFUl
+001F24	GL 	.Value__8BControlCFv
+001F3C	GL 	.AddInt32__8BMessageFPCcl
+001F54	GL 	.AddInt16__8BMessageFPCcs
+001F6C	GL 	.ItemAt__9BListViewCFl
+001F84	GL 	.AddInt64__8BMessageFPCcx
+001F9C	GL 	.__ct__5BListFl
+001FB4	GL 	.GetAppList__7BRosterCFP5BList
+001FCC	GL 	.__ct__8app_infoFv
+001FE4	GL 	.CountItems__5BListCFv
+001FFC	GL 	.ItemAt__5BListCFl
+002014	GL 	.GetRunningAppInfo__7BRosterCFlP8app_info
+00202C	GL 	.strstr
+002044	GL 	.__ct__10BMessengerFPCclPl
+00205C	GL 	.IsValid__10BMessengerCFv
+002074	GL 	.SendMessage__10BMessengerCFP8BMessageP8BHandlerx
+00208C	GL 	.__dt__10BMessengerFv
+0020A4	GL 	.__dt__8app_infoFv
+0020BC	GL 	.PostMessage__7BLooperFUl
+0020D4	GL 	.MessageReceived__7BWindowFP8BMessage
+0020EC	GL 	.Bounds__7BWindowCFv
+002104	GL 	.__ct__5BViewF5BRectPCcUlUl
+00211C	GL 	.AddChild__7BWindowFP5BViewP5BView
+002134	GL 	.__dt__9BListViewFv
+00214C	GL 	.FirstItem__9BListViewCFv
+002164	GL 	.Height__9BListItemCFv
+00217C	GL 	.ResizeTo__5BViewFff
+002194	GL 	.__ct__9BListViewF5BRectPCc14list_view_typeUlUl
+0021AC	GL 	.__ct__8BMessageFv
+0021C4	GL 	.FindMessage__8BMessageCFPCclP8BMessage
+0021DC	GL 	.instantiate_object__FP8BMessage
+0021F4	GL 	.__dynamic_cast
+00220C	GL 	.MakeEmpty__8BMessageFv
+002224	GL 	.AddChild__5BViewFP5BViewP5BView
+00223C	GL 	.__ct__12BRadioButtonF5BRectPCcPCcP8BMessageUlUl
+002254	GL 	.__dt__8BControlFv
+00226C	GL 	.MovePenTo__5BViewF6BPoint
+002284	GL 	.Label__8BControlCFv
+00229C	GL 	.DrawString__5BViewFPCcP16escapement_delta
+0022B4	GL 	.FillRect__5BViewF5BRect7pattern
+0022CC	GL 	.StrokeRect__5BViewF5BRect7pattern
+0022E4	GL 	.IsEnabled__8BControlCFv
+0022FC	GL 	.Contains__5BRectCF6BPoint
+002314	GL 	.SetMouseEventMask__5BViewFUlUl
+00232C	GL 	.StringWidth__5BViewCFPCc
+002344	GL 	.GetFontHeight__5BViewCFP11font_height
+00235C	GL 	.OffsetBy__5BRectFff
+002374	GL 	.InsetBy__5BRectFff
+00238C	GL 	.__ct__8BControlF5BRectPCcPCcP8BMessageUlUl
+0023A4	GL 	.__construct_array
+0023BC	GL 	.__ct__7BButtonF5BRectPCcPCcP8BMessageUlUl
+0023D4	GL 	.__ct__11BStringViewF5BRectPCcPCcUlUl
+0023EC	GL 	.ResizeTo__7BWindowFff
+002404	GL 	.Frame__5BViewCFv
+00241C	GL 	.MoveTo__5BViewFff
+002434	GL 	.Bounds__5BViewCFv
+00244C	GL 	.MessageReceived__12BApplicationFP8BMessage
+002464	GL 	._thread_do_exit_notification
+00247C	GL 	.exit
+002494	GL 	.__unregister_fragment
+0024AC	GL 	.__ptr_glue									file = "ppc/runtime.c"
+0024C0	TI 	@7											file = "common/global_destructor_chain.c"
+0024CC	TI 	@20											file = "common/init_term_dyn.c"
+0024D8	TI 	@28
+0024E4	TI 	@16											file = "common/start_dyn.c"
+0024F0	TI 	@457										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+0024FC	TI 	@460
+002508	TI 	@462
+002514	TI 	@475
+002520	TI 	@458										file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+00252C	TI 	@463
+002538	TI 	@509
+002544	TI 	@522
+002550	TI 	@534
+00255C	TI 	@554
+002568	TI 	@570
+002574	TI 	@620
+002580	TI 	@622
+00258C	TI 	@540										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+002598	TI 	@561
+0025A4	TI 	@574
+0025B0	TI 	@481										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+0025BC	TI 	@486
+0025C8	TI 	@490
+0025D4	TI 	@503
+0025E0	TI 	@490										file = "/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+
+Data section, size = 3588 bytes (TOC anchor = 000000)
+000000	TC 	__dt__8app_infoFv							file = "*Linker-Generated*"
+000004	TC 	__ct__8app_infoFv
+000008	TC 	__ct__11BStringViewF5BRectPCcPCcUlUl
+00000C	TC 	__dt__9BListViewFv
+000010	TC 	__ct__5BViewF5BRectPCcUlUl
+000014	TC 	Value__8BControlCFv
+000018	TC 	__ct__12BApplicationFPCc
+00001C	TC 	ItemAt__5BListCFl
+000020	TC 	FirstItem__9BListViewCFv
+000024	TC 	instantiate_object__FP8BMessage
+000028	TC 	GetFontHeight__5BViewCFP11font_height
+00002C	TC 	AddInt32__8BMessageFPCcl
+000030	TC 	AddInt16__8BMessageFPCcs
+000034	TC 	__ct__12BRadioButtonF5BRectPCcPCcP8BMessageUlUl
+000038	TC 	MessageReceived__7BWindowFP8BMessage
+00003C	TC 	__ct__7BButtonF5BRectPCcPCcP8BMessageUlUl
+000040	TC 	__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+000044	TC 	MovePenTo__5BViewF6BPoint
+000048	TC 	__ct__5BListFl
+00004C	TC 	Invoke__8BControlFP8BMessage
+000050	TC 	FindMessage__8BMessageCFPCclP8BMessage
+000054	TC 	IsEnabled__8BControlCFv
+000058	TC 	__dt__10BMessengerFv
+00005C	TC 	__ct__8BMessageFUl
+000060	TC 	PostMessage__7BLooperFUl
+000064	TC 	AddChild__7BWindowFP5BViewP5BView
+000068	TC 	Contains__5BRectCF6BPoint
+00006C	TC 	SetMouseEventMask__5BViewFUlUl
+000070	TC 	DrawString__5BViewFPCcP16escapement_delta
+000074	TC 	__dt__7BWindowFv
+000078	TC 	__ct__8BControlF5BRectPCcPCcP8BMessageUlUl
+00007C	TC 	StringWidth__5BViewCFPCc
+000080	TC 	Bounds__7BWindowCFv
+000084	TC 	Height__9BListItemCFv
+000088	TC 	SendMessage__10BMessengerCFP8BMessageP8BHandlerx
+00008C	TC 	__nw__8BMessageFUl
+000090	TC 	FillRect__5BViewF5BRect7pattern
+000094	TC 	Invoke__9BListViewFP8BMessage
+000098	TC 	StrokeRect__5BViewF5BRect7pattern
+00009C	TC 	ResizeTo__5BViewFff
+0000A0	TC 	MoveTo__5BViewFff
+0000A4	TC 	AddInt64__8BMessageFPCcx
+0000A8	TC 	Bounds__5BViewCFv
+0000AC	TC 	Label__8BControlCFv
+0000B0	TC 	GetRunningAppInfo__7BRosterCFlP8app_info
+0000B4	TC 	__ct__8BMessageFv
+0000B8	TC 	CountItems__5BListCFv
+0000BC	TC 	MakeEmpty__8BMessageFv
+0000C0	TC 	Frame__5BViewCFv
+0000C4	TC 	InsetBy__5BRectFff
+0000C8	TC 	ResizeTo__7BWindowFff
+0000CC	TC 	__ct__9BListViewF5BRectPCc14list_view_typeUlUl
+0000D0	TC 	IsValid__10BMessengerCFv
+0000D4	TC 	__dt__12BApplicationFv
+0000D8	TC 	__ct__10BMessengerFPCclPl
+0000DC	TC 	__dt__8BControlFv
+0000E0	TC 	ItemAt__9BListViewCFl
+0000E4	TC 	MessageReceived__12BApplicationFP8BMessage
+0000E8	TC 	AddChild__5BViewFP5BViewP5BView
+0000EC	TC 	OffsetBy__5BRectFff
+0000F0	TC 	GetAppList__7BRosterCFP5BList
+0000F4	TC 	exit
+0000F8	TC 	__dl__FPv
+0000FC	TC 	__register_fragment
+000100	TC 	_call_init_routines_
+000104	TC 	__construct_array
+000108	TC 	strstr
+00010C	TC 	find_thread
+000110	TC 	__dynamic_cast
+000114	TC 	__unregister_fragment
+000118	TC 	__nw__FUl
+00011C	TC 	_thread_do_exit_notification
+000120	TC 	get_image_symbol
+000124	TC 	__global_destructor_chain
+000128	TC 	__exception_table_end__
+00012C	TC 	__exception_table_start__
+000130	TC 	__data_end__
+000134	TC 	__data_start__
+000138	TC 	__code_end__
+00013C	TC 	__code_start__
+000140	TC 	__main_thread_id
+000144	TC 	environ
+000148	TC 	argv_save
+00014C	TC 	__vt__8DPMarker
+000150	TC 	B_SOLID_HIGH
+000154	TC 	__ct__5BRectFv
+000158	TC 	__vt__13WColorControl
+00015C	TC 	be_app
+000160	TC 	__vt__12DPMarkWindow
+000164	TC 	__vt__10DPDataList
+000168	TC 	be_roster
+00016C	TC 	@27											file = "common/init_term_dyn.c"
+000170	TC 	@26
+000174	TC 	@19
+000178	TC 	@18
+00017C	TC 	default_environ								file = "common/start_dyn.c"
+000180	TC 	@473										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+000184	TC 	data_plus_marker_sig
+000188	TC 	sFldColor									file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+00018C	TC 	data_plus_mark_client_sig					file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+000190	TC 	keys_names
+000194	TC 	status_name
+000198	TC 	mark_col_name
+00019C	TC 	@532
+0001A0	TC 	@530
+0001A4	TC 	@529
+0001A8	TC 	@528
+0001AC	TC 	@527
+0001B0	TC 	@526
+0001B4	TC 	@525
+0001B8	TC 	@523
+0001BC	TC 	__RTTI__11BArchivable						file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+0001C0	TC 	__RTTI__10DPDataItem
+0001C4	TC 	@465
+0001C8	TD 	fragmentID									file = "common/init_term_dyn.c"
+0001CC	TD 	@472										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+0001D0	TD 	@471
+0001D4	TD 	color_white									file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+0001D8	TD 	color_black
+0001DC	TD 	color_red
+0001E0	TD 	color_green
+0001E4	TD 	color_blue
+0001E8	TD 	color_yellow
+0001EC	TD 	color_cyan
+0001F0	TD 	color_magenta
+0001F8	TD 	@619
+000200	TD 	@616
+000204	TD 	@615
+000208	TD 	@614
+00020C	TD 	@613
+000210	TD 	@612
+000218	TD 	@611
+00021C	TD 	@610
+000220	TD 	@609
+000224	TD 	@456
+000228	TD 	@455
+00022C	TD 	color_std_gray								file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+000230	TD 	@520
+000234	TD 	@538
+000238	TD 	@537
+00023C	TD 	@536
+000240	TD 	@535
+000244	TD 	@534
+000248	TD 	@533
+00024C	TD 	@531
+000250	TD 	@524
+000254	TD 	@522
+000258	TD 	@521
+00025C	TD 	@485										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+000260	DS 	_term_routine_								file = "common/init_term_dyn.c"
+000268	DS 	_init_routine_
+000270	DS 	__start										file = "common/start_dyn.c"
+000278	DS 	MessageReceived__8DPMarkerFP8BMessage		file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+000280	DS 	__dt__8DPMarkerFv
+000288	DS 	@164@__dt__13WColorControlFv				file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+000290	DS 	@164@Invoke__8BControlFP8BMessage
+000298	DS 	ResizeToPreferred__13WColorControlFv
+0002A0	DS 	MouseUp__13WColorControlF6BPoint
+0002A8	DS 	MouseMoved__13WColorControlF6BPointUlPC8BMessage
+0002B0	DS 	MouseDown__13WColorControlF6BPoint
+0002B8	DS 	Draw__13WColorControlF5BRect
+0002C0	DS 	__dt__13WColorControlFv
+0002C8	DS 	__ct__5BRectFv
+0002D0	DS 	__dt__12DPMarkWindowFv						file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+0002D8	DS 	MessageReceived__12DPMarkWindowFP8BMessage
+0002E0	DS 	__dt__10DPDataListFv						file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+0002E8	DS 	@164@__dt__10DPDataListFv
+0002F0	DS 	@164@Invoke__9BListViewFP8BMessage
+0002F8	DS 	ResizeToPreferred__10DPDataListFv
+000300	DS 	GetPreferredSize__10DPDataListFPfPf
+000308	TB 	@456										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+00031A	TB 	@474
+00032C	TB 	@457										file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+000342	TB 	@539										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+00046C	TB 	@560
+00047E	TB 	@480										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+0004A8	TB 	@489										file = "/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+0004DC	RW 	@18											file = "common/init_term_dyn.c"
+0004EE	RW 	@19
+0004FF	RW 	@26
+000510	RW 	@27
+000520	RW 	@12											file = "common/start_dyn.c"
+000530	RW 	default_environ
+000538	RW 	data_plus_marker_sig						file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarker.cp"
+000578	RW 	@473
+000586	RW 	@476
+00058F	RW 	@478
+00059C	RW 	__RTTI__11BArchivable
+0005A4	RW 	@479
+0005B0	RW 	@480
+0005BC	RW 	__RTTI__8BHandler
+0005C4	RW 	@481
+0005CC	RW 	@482
+0005E0	RW 	__RTTI__7BLooper
+0005E8	RW 	@483
+0005F8	RW 	@484
+000614	RW 	__RTTI__12BApplication
+00061C	RW 	@477
+000640	RW 	__RTTI__8DPMarker
+000648	RW 	__vt__8DPMarker
+00070C	RW 	sFldColor									file = "/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+000730	RW 	@623
+00073E	RW 	@625
+000748	RW 	__RTTI__8BInvoker
+000750	RW 	@626
+00075C	RW 	__RTTI__11BArchivable
+000764	RW 	@627
+000770	RW 	@628
+00077C	RW 	__RTTI__8BHandler
+000784	RW 	@629
+00078C	RW 	@630
+0007A0	RW 	__RTTI__5BView
+0007A8	RW 	@631
+0007B4	RW 	@632
+0007D8	RW 	__RTTI__8BControl
+0007E0	RW 	@624
+00080C	RW 	__RTTI__13WColorControl
+000814	RW 	__vt__13WColorControl
+000944	RW 	data_plus_mark_client_sig					file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPMarkWindow.cp"
+000964	RW 	mark_col_name
+00096C	RW 	status_name
+000974	RW 	keys_names
+00097C	RW 	@523
+000985	RW 	@525
+00098A	RW 	@526
+000993	RW 	@527
+00099A	RW 	@528
+0009A1	RW 	@529
+0009AF	RW 	@530
+0009B5	RW 	@532
+0009E0	RW 	@562
+0009ED	RW 	@564
+0009FC	RW 	__RTTI__11BArchivable
+000A04	RW 	@565
+000A10	RW 	@566
+000A1C	RW 	__RTTI__8BHandler
+000A24	RW 	@567
+000A2C	RW 	@568
+000A40	RW 	__RTTI__7BLooper
+000A48	RW 	@569
+000A50	RW 	@570
+000A6C	RW 	__RTTI__7BWindow
+000A74	RW 	@563
+000A98	RW 	__RTTI__12DPMarkWindow
+000AA0	RW 	__vt__12DPMarkWindow
+000B78	RW 	@465										file = "/boot/home/develop/dataplus/Data+ copy/DPMarker/DPDataList.cp"
+000B83	RW 	@467
+000B90	RW 	__RTTI__11BArchivable
+000B98	RW 	@468
+000BA4	RW 	@469
+000BB0	RW 	__RTTI__9BListItem
+000BB8	RW 	@466
+000BCC	RW 	__RTTI__10DPDataItem
+000BD4	RW 	@491
+000BDF	RW 	@493
+000BE8	RW 	__RTTI__8BInvoker
+000BF0	RW 	@494
+000BFC	RW 	@495
+000C08	RW 	__RTTI__8BHandler
+000C10	RW 	@496
+000C18	RW 	@497
+000C2C	RW 	__RTTI__5BView
+000C34	RW 	@498
+000C40	RW 	@499
+000C64	RW 	__RTTI__9BListView
+000C6C	RW 	@492
+000C98	RW 	__RTTI__10DPDataList
+000CA0	RW 	__vt__10DPDataList
+000DFC	RW 	__global_destructor_chain					file = "common/global_destructor_chain.c"
+
+Import container "libbe.so"
+Current Version = 00000000, Old Implementation = 00000000
+000000	DS 	SetHighColor__5BViewF9rgb_color
+000001	DS 	SetResizingMode__5BViewFUl
+000002	DS 	MakeEmpty__9BListViewFv
+000003	DS 	SetFont__5BViewFPC5BFontUl
+000004	DS 	SetLabel__8BControlFPCc
+000005	DS 	SetHandlerForReply__8BInvokerFP8BHandler
+000006	DS 	__dt__8app_infoFv
+000007	DS 	RefsReceived__12BApplicationFP8BMessage
+000008	DS 	AddList__9BListViewFP5BListl
+000009	DS 	__ct__8app_infoFv
+00000A	DS 	Perform__8BControlFUlPv
+00000B	DS 	MouseDown__9BListViewF6BPoint
+00000C	DS 	Archive__8BControlCFP8BMessageb
+00000D	DS 	AppActivated__12BApplicationFb
+00000E	DS 	__ct__11BStringViewF5BRectPCcPCcUlUl
+00000F	DS 	__dt__9BListViewFv
+000010	DS 	_ReservedControl4__8BControlFv
+000011	DS 	MakeFocus__8BControlFb
+000012	DS 	SetMessage__8BInvokerFP8BMessage
+000013	DS 	__ct__5BViewF5BRectPCcUlUl
+000014	DS 	_ReservedControl3__8BControlFv
+000015	RW 	be_app
+000016	DS 	Value__8BControlCFv
+000017	DS 	_ReservedListView2__9BListViewFv
+000018	DS 	Archive__12BApplicationCFP8BMessageb
+000019	DS 	Perform__7BWindowFUlPv
+00001A	DS 	_ReservedListView3__9BListViewFv
+00001B	DS 	RemoveCommonFilter__7BLooperFP14BMessageFilter
+00001C	DS 	MenusEnded__7BWindowFv
+00001D	DS 	__ct__12BApplicationFPCc
+00001E	DS 	ItemAt__5BListCFl
+00001F	DS 	AllAttached__9BListViewFv
+000020	DS 	FirstItem__9BListViewCFv
+000021	DS 	FrameMoved__9BListViewF6BPoint
+000022	DS 	instantiate_object__FP8BMessage
+000023	RW 	B_SOLID_HIGH
+000024	DS 	RemoveItem__9BListViewFl
+000025	DS 	_ReservedWindow5__7BWindowFv
+000026	DS 	GetFontHeight__5BViewCFP11font_height
+000027	DS 	_ReservedHandler4__8BHandlerFv
+000028	DS 	_ReservedWindow4__7BWindowFv
+000029	DS 	ResolveSpecifier__9BListViewFP8BMessagelP8BMessagelPCc
+00002A	DS 	_ReservedListView4__9BListViewFv
+00002B	DS 	_ReservedWindow3__7BWindowFv
+00002C	DS 	QuitRequested__12BApplicationFv
+00002D	DS 	_ReservedWindow8__7BWindowFv
+00002E	DS 	_ReservedWindow2__7BWindowFv
+00002F	DS 	DrawAfterChildren__5BViewF5BRect
+000030	DS 	_ReservedWindow7__7BWindowFv
+000031	DS 	MessageReceived__8BControlFP8BMessage
+000032	DS 	SetListType__9BListViewF14list_view_type
+000033	DS 	_ReservedWindow1__7BWindowFv
+000034	DS 	_ReservedWindow6__7BWindowFv
+000035	DS 	_ReservedHandler3__8BHandlerFv
+000036	DS 	WindowActivated__7BWindowFb
+000037	DS 	WorkspacesChanged__7BWindowFUlUl
+000038	DS 	AddInt32__8BMessageFPCcl
+000039	DS 	_ReservedArchivable1__11BArchivableFv
+00003A	DS 	GetSupportedSuites__8BControlFP8BMessage
+00003B	DS 	AddInt16__8BMessageFPCcs
+00003C	DS 	__ct__12BRadioButtonF5BRectPCcPCcP8BMessageUlUl
+00003D	DS 	task_looper__7BWindowFv
+00003E	DS 	_ReservedHandler2__8BHandlerFv
+00003F	DS 	GetSupportedSuites__7BWindowFP8BMessage
+000040	DS 	MessageReceived__7BWindowFP8BMessage
+000041	DS 	DispatchMessage__7BWindowFP8BMessageP8BHandler
+000042	DS 	SetPenSize__5BViewFf
+000043	DS 	SetEnabled__8BControlFb
+000044	DS 	__ct__7BButtonF5BRectPCcPCcP8BMessageUlUl
+000045	DS 	_ReservedInvoker1__8BInvokerFv
+000046	DS 	_ReservedApplication8__12BApplicationFv
+000047	DS 	__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+000048	DS 	MovePenTo__5BViewF6BPoint
+000049	DS 	_ReservedInvoker2__8BInvokerFv
+00004A	DS 	__ct__5BListFl
+00004B	DS 	GetSupportedSuites__12BApplicationFP8BMessage
+00004C	DS 	_ReservedApplication7__12BApplicationFv
+00004D	DS 	Invoke__8BControlFP8BMessage
+00004E	DS 	KeyDown__9BListViewFPCcl
+00004F	DS 	QuitRequested__7BWindowFv
+000050	DS 	_ReservedArchivable3__11BArchivableFv
+000051	DS 	GetSupportedSuites__9BListViewFP8BMessage
+000052	DS 	Archive__9BListViewCFP8BMessageb
+000053	DS 	_ReservedInvoker3__8BInvokerFv
+000054	DS 	FrameResized__9BListViewFff
+000055	DS 	MenusBeginning__7BWindowFv
+000056	DS 	KeyDown__8BControlFPCcl
+000057	DS 	FindMessage__8BMessageCFPCclP8BMessage
+000058	DS 	ReadyToRun__12BApplicationFv
+000059	DS 	WindowActivated__9BListViewFb
+00005A	DS 	_ReservedApplication1__12BApplicationFv
+00005B	DS 	AllAttached__8BControlFv
+00005C	DS 	DoMiscellaneous__9BListViewFQ29BListView8MiscCodePQ29BListView8MiscData
+00005D	DS 	ScreenChanged__7BWindowF5BRect11color_space
+00005E	DS 	ResolveSpecifier__7BWindowFP8BMessagelP8BMessagelPCc
+00005F	DS 	IsEnabled__8BControlCFv
+000060	DS 	__dt__10BMessengerFv
+000061	DS 	SelectionChanged__9BListViewFv
+000062	DS 	__ct__8BMessageFUl
+000063	DS 	PostMessage__7BLooperFUl
+000064	DS 	SetValue__8BControlFl
+000065	DS 	SetTarget__8BInvokerFPC8BHandlerPC7BLooper
+000066	DS 	FrameResized__7BWindowFff
+000067	DS 	AddChild__7BWindowFP5BViewP5BView
+000068	DS 	AddCommonFilter__7BLooperFP14BMessageFilter
+000069	DS 	Perform__9BListViewFUlPv
+00006A	DS 	Contains__5BRectCF6BPoint
+00006B	DS 	AllDetached__9BListViewFv
+00006C	DS 	Minimize__7BWindowFb
+00006D	DS 	SetMouseEventMask__5BViewFUlUl
+00006E	DS 	DrawString__5BViewFPCcP16escapement_delta
+00006F	DS 	ScrollTo__5BViewF6BPoint
+000070	DS 	__dl__8BMessageFPvUl
+000071	DS 	ResolveSpecifier__8BControlFP8BMessagelP8BMessagelPCc
+000072	DS 	MouseMoved__9BListViewF6BPointUlPC8BMessage
+000073	DS 	SetCommonFilterList__7BLooperFP5BList
+000074	DS 	Archive__7BWindowCFP8BMessageb
+000075	DS 	_ReservedApplication4__12BApplicationFv
+000076	DS 	__dt__7BWindowFv
+000077	DS 	Hide__7BWindowFv
+000078	DS 	Pulse__12BApplicationFv
+000079	DS 	_ReservedApplication6__12BApplicationFv
+00007A	DS 	Quit__7BWindowFv
+00007B	DS 	__ct__8BControlF5BRectPCcPCcP8BMessageUlUl
+00007C	DS 	StringWidth__5BViewCFPCc
+00007D	DS 	Bounds__7BWindowCFv
+00007E	DS 	Height__9BListItemCFv
+00007F	DS 	AddItem__9BListViewFP9BListItem
+000080	DS 	Show__7BWindowFv
+000081	DS 	_ReservedControl2__8BControlFv
+000082	DS 	AttachedToWindow__9BListViewFv
+000083	DS 	DrawItem__9BListViewFP9BListItem5BRectb
+000084	DS 	SendMessage__10BMessengerCFP8BMessageP8BHandlerx
+000085	DS 	_ReservedApplication2__12BApplicationFv
+000086	DS 	__nw__8BMessageFUl
+000087	DS 	Pulse__5BViewFv
+000088	DS 	_ReservedControl1__8BControlFv
+000089	DS 	_ReservedApplication5__12BApplicationFv
+00008A	DS 	_ReservedApplication3__12BApplicationFv
+00008B	DS 	FillRect__5BViewF5BRect7pattern
+00008C	DS 	SetTarget__8BInvokerF10BMessenger
+00008D	DS 	AddItem__9BListViewFP9BListIteml
+00008E	DS 	Invoke__9BListViewFP8BMessage
+00008F	DS 	Quit__12BApplicationFv
+000090	DS 	StrokeRect__5BViewF5BRect7pattern
+000091	DS 	AllDetached__8BControlFv
+000092	DS 	ScrollTo__9BListViewF6BPoint
+000093	DS 	ResizeTo__5BViewFff
+000094	DS 	MoveTo__5BViewFff
+000095	DS 	FrameMoved__7BWindowF6BPoint
+000096	DS 	KeyUp__5BViewFPCcl
+000097	DS 	InitiateDrag__9BListViewF6BPointlb
+000098	DS 	TargetedByScrollView__9BListViewFP11BScrollView
+000099	DS 	AddInt64__8BMessageFPCcx
+00009A	DS 	AddList__9BListViewFP5BList
+00009B	DS 	Bounds__5BViewCFv
+00009C	DS 	ConvertToMessage__7BLooperFPvl
+00009D	DS 	RemoveItems__9BListViewFll
+00009E	DS 	Hide__5BViewFv
+00009F	DS 	SetFlags__5BViewFUl
+0000A0	DS 	SetSelectionMessage__9BListViewFP8BMessage
+0000A1	DS 	Label__8BControlCFv
+0000A2	DS 	Show__5BViewFv
+0000A3	DS 	SetDrawingMode__5BViewF12drawing_mode
+0000A4	DS 	_ReservedView2__5BViewFv
+0000A5	DS 	_ReservedView3__5BViewFv
+0000A6	DS 	DispatchMessage__12BApplicationFP8BMessageP8BHandler
+0000A7	DS 	_ReservedLooper1__7BLooperFv
+0000A8	DS 	DetachedFromWindow__8BControlFv
+0000A9	DS 	_ReservedLooper4__7BLooperFv
+0000AA	DS 	MouseUp__9BListViewF6BPoint
+0000AB	DS 	MessageReceived__9BListViewFP8BMessage
+0000AC	DS 	_ReservedLooper2__7BLooperFv
+0000AD	DS 	Zoom__7BWindowF6BPointff
+0000AE	DS 	_ReservedLooper5__7BLooperFv
+0000AF	DS 	ConstrainClippingRegion__5BViewFP7BRegion
+0000B0	DS 	_ReservedView8__5BViewFv
+0000B1	DS 	SetViewColor__5BViewF9rgb_color
+0000B2	DS 	GetRunningAppInfo__7BRosterCFlP8app_info
+0000B3	DS 	ResolveSpecifier__12BApplicationFP8BMessagelP8BMessagelPCc
+0000B4	DS 	__ct__8BMessageFv
+0000B5	DS 	_ReservedLooper6__7BLooperFv
+0000B6	DS 	Draw__9BListViewF5BRect
+0000B7	DS 	CountItems__5BListCFv
+0000B8	DS 	_ReservedView5__5BViewFv
+0000B9	DS 	SendNotices__8BHandlerFUlPC8BMessage
+0000BA	DS 	RemoveItem__9BListViewFP9BListItem
+0000BB	DS 	SetInvocationMessage__9BListViewFP8BMessage
+0000BC	DS 	MakeEmpty__8BMessageFv
+0000BD	DS 	_ReservedView4__5BViewFv
+0000BE	DS 	_ReservedLooper3__7BLooperFv
+0000BF	DS 	_ReservedView6__5BViewFv
+0000C0	DS 	_ReservedView7__5BViewFv
+0000C1	DS 	Perform__12BApplicationFUlPv
+0000C2	RW 	be_roster
+0000C3	DS 	MakeFocus__9BListViewFb
+0000C4	DS 	Frame__5BViewCFv
+0000C5	DS 	FrameResized__5BViewFff
+0000C6	DS 	_ReservedArchivable2__11BArchivableFv
+0000C7	DS 	ScriptReceived__12BApplicationFP8BMessagelP8BMessagelPCc
+0000C8	DS 	GetPreferredSize__8BControlFPfPf
+0000C9	DS 	InsetBy__5BRectFff
+0000CA	DS 	ResizeTo__7BWindowFff
+0000CB	DS 	TargetedByScrollView__5BViewFP11BScrollView
+0000CC	DS 	__ct__9BListViewF5BRectPCc14list_view_typeUlUl
+0000CD	DS 	IsValid__10BMessengerCFv
+0000CE	DS 	__dt__12BApplicationFv
+0000CF	DS 	SetNextHandler__8BHandlerFP8BHandler
+0000D0	DS 	WindowActivated__8BControlFb
+0000D1	DS 	RemoveFilter__8BHandlerFP14BMessageFilter
+0000D2	DS 	ConvertToMessage__7BWindowFPvl
+0000D3	DS 	__ct__10BMessengerFPCclPl
+0000D4	DS 	Run__12BApplicationFv
+0000D5	DS 	task_looper__7BLooperFv
+0000D6	DS 	ArgvReceived__12BApplicationFlPPc
+0000D7	DS 	__dt__8BControlFv
+0000D8	DS 	ItemAt__9BListViewCFl
+0000D9	DS 	MessageReceived__12BApplicationFP8BMessage
+0000DA	DS 	WorkspaceActivated__7BWindowFlb
+0000DB	DS 	FrameMoved__5BViewF6BPoint
+0000DC	DS 	AboutRequested__12BApplicationFv
+0000DD	DS 	SetFilterList__8BHandlerFP5BList
+0000DE	DS 	AddChild__5BViewFP5BViewP5BView
+0000DF	DS 	OffsetBy__5BRectFff
+0000E0	DS 	AttachedToWindow__8BControlFv
+0000E1	DS 	AddFilter__8BHandlerFP14BMessageFilter
+0000E2	DS 	DetachedFromWindow__9BListViewFv
+0000E3	DS 	GetAppList__7BRosterCFP5BList
+0000E4	DS 	SetLowColor__5BViewF9rgb_color
+0000E5	DS 	Run__7BWindowFv
+
+Import container "libroot.so"
+Current Version = 00000000, Old Implementation = 00000000
+0000E6	RW 	environ
+0000E7	DS 	exit
+0000E8	DS 	__dl__FPv
+0000E9	DS 	__register_fragment
+0000EA	DS 	_call_init_routines_
+0000EB	DS 	__construct_array
+0000EC	RW 	argv_save
+0000ED	DS 	strstr
+0000EE	DS 	find_thread
+0000EF	DS 	__dynamic_cast
+0000F0	DS 	__unregister_fragment
+0000F1	RW 	__main_thread_id
+0000F2	DS 	__nw__FUl
+0000F3	DS 	_thread_do_exit_notification
+0000F4	DS 	get_image_symbol
+
+Removed unused TOC-reload slots:   0x00000000

@@ -1,0 +1,43 @@
+DataPlus
+** FIX
+	* Combined, saved files mess up if other than orig fields are used.. Should only save selected fields.
+	* Make so all sets have correct fields?
+	* Data set name won't set (wrong target for TextControl).
+
+** ADD
+	* Add paste text capability
+	* Way to send second data set to a target?
+
+Regression
+** FIX
+	* No data points when "Combine" box in DP is checked.
+	* Stray clicking can still reset axes.
+
+** ADD
+	* Regression line types..
+		Class for drawing dashed lines?
+	* Add pop-up to graph field for some options?
+		Set axes?
+	* Polygon selection of data points?
+	* Sliding axes?
+	* Save graph and other characteristics (Archive for GraphAxes?)
+	* "Combine data sets" function.
+
+Distribution
+** FIX
+	* Construct WSDistribution with data or fitting function.
+	* Set data display for fitted or raw.
+	* Stray clicking can still reset axes.
+	* Crashes when "Combine" box in DP is checked. (?Zero points causes crash?)
+
+** ADD
+	* Try to find subpopulations?
+	* Log-normal plotting & fitting
+	* "Combine data sets" function.
+
+Multiple Regression
+** FIX
+
+** ADD
+
+

@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>dpdocs.html</TITLE>
+</HEAD>
+<BODY BODY BGCOLOR="#FFFFFF"> 
+<P ALIGN="center"><FONT COLOR="#000000" SIZE=5>&nbsp;</FONT><FONT COLOR="#000000" SIZE=3></P>
+
+<P ALIGN="center"><IMG SRC="dpdocs.images/dpicon.gif"
+WIDTH="48" HEIGHT="48" HSPACE="5">    <FONT SIZE=6>DataPlus Data Manager Console</FONT>   <IMG SRC="dpdocs.images/dpicon.gif" WIDTH="48" HEIGHT="48" HSPACE="5"></P>
+<hr>
+<P>The data manager is opened by double-clicking on the DataPlus icon. This opens a blank manager. It may also be opened by dropping a data file on the icon. See below for the types of data files which work with DataPlus. If opened without a file, the application will show the "blank" window:</P>
+
+<IMG SRC="dpdocs.images/blankwind.png" ALIGN=left HSPACE=5 WIDTH="238" HEIGHT="151"><br>
+Data files may be added to DataPlus by either dropping them in the panel which says "Drop Or Open File" or by choosing "Open" from the "File" menu. Acceptable data files are either those saved in the native DataPlus format or text files. If text files are used, they may be in the form of rows separated by returns and columns delimited by tabs, commas or white space. If white space delineation is used, you must be careful that the only white space is that between data fields. The tab-separated format is suggested. Spreadsheet data from<a href="http://www.gobe.com"> Gobe Productive</a> can be saved to a tab file and then imported into DataPlus, as can a text file from any word processor.
+<BR CLEAR=left>
+<br>
+<B>NOTE</B> that you can also select and drop a section of text into the view and it will be translated just as if it were a text file.
+<br>
+<P><FONT SIZE=5 COLOR="#e40000">How DataPlus translates a text file:</FONT></P>
+<P>When a text file or a selection of text is dropped onto the view, DataPlus will first try to determine how the data is delineated. If it finds tabs in the first line, it assumes tab-delineated data. If it finds commas, then comma-delineation is assumed. If neither is found, then white-space delineation is used. If the first line of text contains non-numerical data, the fields are used as column headers for the following data. The first column containing non-numeric data is assumed to be a header title for the row.</P>
+
+<P><B>NOTE</B> that there is a row of icons at the bottom of the window. Initially they are all dimmed except for the last one, which is the<a href="../EntryDocs/entrydocs.html"> Direct Entry Tool</a>, which can be used to build data entry sheets. The other icons will remain dimmed until there is data available for analysis.</P>
+
+<IMG SRC="dpdocs.images/opened.png" ALIGN=left HSPACE=5 WIDTH="238" HEIGHT="229">
+<br>
+From the "Data+/DataPlus_Docs/Samples" folder, drop the "Native_Set" file in the window. The application should read the file and add a data panel containing the data set:
+<br><br>
+The data panel shows the data set name (which may be edited) along with the number of records and data fields the set contains.
+
+<P><B>NOTE</B> at this point, three more icons are enabled, the  the <a href="../MultiRegrDocs/mrdocs.html">Multiple Regression</a> tool, the <a href="../SortDocs/sortdocs.html">Matrix Sorting</a> tool and the <a href="../FormulaDocs/formdocs.html">Formula</a> tool, the latter two used for modifying the data sets.</P>
+<BR CLEAR=left>
+<br>
+<hr>
+<P><B><FONT SIZE=5>Analyzing the Data:</B></FONT></P>
+<P>In order to enable data analysis, it is necessary to choose one or more data fields. If the "Select Fields" button is clicked, a selection dialog like that below will be brought up. Each data field can be set to either an X,Y or Z axis. The default is "None". There may be only one of each axis chosen, and they must be selected in X,Y,Z order. The type of data analysis enabled will depend upon how many axes are chosen. Choosing a single "X" axis enables the <a href="../DistDocs/distdocs.html">Distribution Analysis</a> choosing both an "X" and "Y" axis enables both the <a href="../RegrDocs/regrdocs.html">Linear Regression
+</a></FONT> analysis and <a href="../PolyDocs/polydocs.html">Polynomial Regression</a> analysis. If all three axes are selected, the <a href="../3_DDocs/3ddocs.html">3-D Plot</a> is enabled.</P>
+
+<P>At this time, choose the "X" and "Y" axes as shown. </P>
+
+<P><IMG SRC="dpdocs.images/selection.png" WIDTH="372" HEIGHT="229"></P>
+
+<P>Click on the "OK" button to apply the selection. The panel should now look like this:</P>
+
+<P><IMG SRC="dpdocs.images/enabled.png" WIDTH="237" HEIGHT="228"></P>
+
+<P>Click on the <a href="../RegrDocs/regrdocs.html">Linear Regression</a></FONT> icon (first enabled icon from left) to analyze the data using that tool.</P>
+
+<P><B>NOTE!</B> At this time, the only tools available are for<A HREF="../DistDocs/distdocs.html"> Distribution Analysis</A> and <a href="../RegrDocs/regrdocs.html">Linear Regression Analysis</a></FONT>. More will be added as they are written.</P>
+<h3>Continue the tutorial <A HREF="../RegrDocs/regrdocs.html">here</A></h3>
+
+<h3><A HREF="../index.html"><IMG SRC="../index.images/dpicon.gif" HEIGHT="16" WIDTH="16" VSPACE="0" HSPACE="5" BORDER="0">Back To Index</A></h3>
+</BODY>
+</HTML>

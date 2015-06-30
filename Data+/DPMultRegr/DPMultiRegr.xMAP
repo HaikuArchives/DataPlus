@@ -1,0 +1,622 @@
+File:    1	"MWOBPPC "
+File:    7	"libbe.so"
+File:    8	"libroot.so"
+File:    9	"libtracker.so"
+File:   11	"/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+File:   12	"/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+
+Files that were not referenced:
+"/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DMRStatView.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+"/boot/home/develop/dataplus/SWClasses/Math/WMFunctBase.cp"
+"/boot/home/develop/dataplus/SWClasses/Math/Statistics/WSLinearRegr.cp"
+"/boot/home/develop/dataplus/SWClasses/Utilities/U_Conversions.c"
+"/boot/home/develop/dataplus/SWClasses/Utilities/URealFmt_Utils.c"
+"/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+"/boot/home/develop/dataplus/SWClasses/Math/UFloating_Util.c"
+"/boot/home/develop/dataplus/SWClasses/Interface/WColorControl.cp"
+"/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+"/boot/home/develop/dataplus/SWClasses/Utilities/WUPrefFile.cp"
+
+Code section, size = 9900 bytes
+000000	PR 	.__sinit									file = "*Linker-Generated*"
+00001C	PR 	.__destroy_global_chain						file = "common/global_destructor_chain.c"
+000070	PR 	.__RTOC										file = "common/init_term_dyn.c"
+000078	PR 	._init_routine_
+000128	PR 	._term_routine_
+0001B8	PR 	.__start									file = "common/start_dyn.c"
+00024C	PR 	.__ct__10DPMRWindowF5BRect					file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+000994	PR 	.__dt__10DPMRWindowFv
+000A14	PR 	.MessageReceived__10DPMRWindowFP8BMessage
+000C10	PR 	.CheckSave__10DPMRWindowFv
+000CE4	PR 	.ClearStatus__10DPMRWindowF11EDataStatus
+000CE8	PR 	.CreateOpenPanel__10DPMRWindowFv
+000E44	PR 	.CreateSavePanel__10DPMRWindowFv
+000FB8	PR 	.FrameResized__10DPMRWindowFff
+000FBC	PR 	.MenusBeginning__10DPMRWindowFv
+001148	PR 	.OpenFile__10DPMRWindowFP8BMessage
+0014A8	PR 	.Print__10DPMRWindowFv
+001604	PR 	.SaveAsFile__10DPMRWindowFP8BMessage
+001898	PR 	.Save__10DPMRWindowFv
+0018AC	PR 	.SetUpPage__10DPMRWindowFv
+001988	PR 	.QuitRequested__10DPMRWindowFv
+0019C0	PR 	.main										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+001A10	PR 	.__ct__10DPMultRegrFv
+001AE4	PR 	.__dt__10DPMultRegrFv
+001B74	PR 	.AboutRequested__10DPMultRegrFv
+001BE4	PR 	.DataSet__10DPMultRegrFs
+001C10	PR 	.MessageReceived__10DPMultRegrFP8BMessage
+001CBC	PR 	.MarkData__10DPMultRegrFP8BMessage
+001CC0	GL 	.get_image_symbol							file = "*Linker-Generated*"
+001CD8	GL 	.__register_fragment
+001CF0	GL 	.find_thread
+001D08	GL 	._call_init_routines_
+001D20	GL 	.__ct__12BApplicationFPCc
+001D38	GL 	.__dt__12BApplicationFv
+001D50	GL 	.__dl__FPv
+001D68	GL 	.__ct__7BStringFv
+001D80	GL 	.DetachCurrentMessage__7BLooperFv
+001D98	GL 	.MessageReceived__12BApplicationFP8BMessage
+001DB0	GL 	.__dt__7BStringFv
+001DC8	GL 	.__nw__FUl
+001DE0	GL 	.__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+001DF8	GL 	.Go__6BAlertFv
+001E10	GL 	.__ct__5BListFl
+001E28	GL 	.__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+001E40	GL 	.__dt__5BPathFv
+001E58	GL 	.__dt__7BWindowFv
+001E70	GL 	.__ct__9entry_refFv
+001E88	GL 	.__ct__10BDirectoryFv
+001EA0	GL 	.__ct__5BPathFv
+001EB8	GL 	.FindRef__8BMessageCFPCcP9entry_ref
+001ED0	GL 	.FindString__8BMessageCFPCcl
+001EE8	GL 	.strcpy
+001F00	GL 	.SetTo__10BDirectoryFPC9entry_ref
+001F18	GL 	.InitCheck__5BNodeCFv
+001F30	GL 	.SetTo__5BPathFPC10BDirectoryPCcb
+001F48	GL 	.InitCheck__5BPathCFv
+001F60	GL 	.Path__5BPathCFv
+001F78	GL 	.__ct__5BFileFPCcUl
+001F90	GL 	.__ct__9BNodeInfoFv
+001FA8	GL 	.SetTo__9BNodeInfoFP5BNode
+001FC0	GL 	.SetType__9BNodeInfoFPCc
+001FD8	GL 	.SetPreferredApp__9BNodeInfoFPCc8app_verb
+001FF0	GL 	.__dt__9BNodeInfoFv
+002008	GL 	.strcat
+002020	GL 	.__dt__10BDirectoryFv
+002038	GL 	.__dt__9entry_refFv
+002050	GL 	.__ct__5BNodeFPC9entry_ref
+002068	GL 	.__ct__9BNodeInfoFP5BNode
+002080	GL 	.InitCheck__9BNodeInfoCFv
+002098	GL 	.GetType__9BNodeInfoCFPc
+0020B0	GL 	.__ct__9BMimeTypeFPCc
+0020C8	GL 	.Type__9BMimeTypeCFv
+0020E0	GL 	.strcmp
+0020F8	GL 	.__ct__5BFileFPC9entry_refUl
+002110	GL 	.__nw__8BMessageFUl
+002128	GL 	.__ct__8BMessageFv
+002140	GL 	.Unflatten__8BMessageFP7BDataIO
+002158	GL 	.FindMessage__8BMessageCFPCclP8BMessage
+002170	GL 	.instantiate_object__FP8BMessage
+002188	GL 	.__dynamic_cast
+0021A0	GL 	.__dt__9BMimeTypeFv
+0021B8	GL 	.__dt__5BNodeFv
+0021D0	GL 	.Show__10BFilePanelFv
+0021E8	GL 	.__ct__10BFilePanelF15file_panel_modeP10BMessengerPC9entry_refUlbP8BMessageP10BRefFilterbb
+002200	GL 	.__ct__10BMessengerFPC8BHandlerPC7BLooperPl
+002218	GL 	.__ct__10BMessengerFRC10BMessenger
+002230	GL 	.SetTarget__10BFilePanelF10BMessenger
+002248	GL 	.__dt__10BMessengerFv
+002260	GL 	.SetTo__10BDirectoryFPCc
+002278	GL 	.SetPanelDirectory__10BFilePanelFPC10BDirectory
+002290	GL 	.SetSaveText__10BFilePanelFPCc
+0022A8	GL 	.__ct__9BPrintJobFPCc
+0022C0	GL 	.ConfigPage__9BPrintJobFv
+0022D8	GL 	.Settings__9BPrintJobFv
+0022F0	GL 	.PaperRect__9BPrintJobFv
+002308	GL 	.PrintableRect__9BPrintJobFv
+002320	GL 	.__dt__9BPrintJobFv
+002338	GL 	.Lock__7BLooperFv
+002350	GL 	.SetSettings__9BPrintJobFP8BMessage
+002368	GL 	.ConfigJob__9BPrintJobFv
+002380	GL 	.BeginJob__9BPrintJobFv
+002398	GL 	.InsetBy__5BRectFff
+0023B0	GL 	.SpoolPage__9BPrintJobFv
+0023C8	GL 	.CommitJob__9BPrintJobFv
+0023E0	GL 	.Unlock__7BLockerFv
+0023F8	GL 	.Unlock__7BLooperFv
+002410	GL 	.IsMarked__9BMenuItemCFv
+002428	GL 	.MessageReceived__7BWindowFP8BMessage
+002440	GL 	.PostMessage__7BLooperFUl
+002458	GL 	.CountItems__5BListCFv
+002470	GL 	.ItemAt__5BListCFl
+002488	GL 	.__ct__8BMenuBarF5BRectPCcUl11menu_layoutb
+0024A0	GL 	.__ct__5BMenuFPCc11menu_layout
+0024B8	GL 	.__ct__8BMessageFUl
+0024D0	GL 	.__ct__9BMenuItemFPCcP8BMessagecUl
+0024E8	GL 	.AddItem__5BMenuFP9BMenuItem
+002500	GL 	.AddSeparatorItem__5BMenuFv
+002518	GL 	.AddItem__5BMenuFP5BMenu
+002530	GL 	.AddChild__7BWindowFP5BViewP5BView
+002548	GL 	._thread_do_exit_notification
+002560	GL 	.exit
+002578	GL 	.__unregister_fragment
+002590	GL 	.__ptr_glue									file = "ppc/runtime.c"
+0025A4	TI 	@7											file = "common/global_destructor_chain.c"
+0025B0	TI 	@20											file = "common/init_term_dyn.c"
+0025BC	TI 	@28
+0025C8	TI 	@16											file = "common/start_dyn.c"
+0025D4	TI 	@540										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+0025E0	TI 	@544
+0025EC	TI 	@588
+0025F8	TI 	@606
+002604	TI 	@619
+002610	TI 	@631
+00261C	TI 	@648
+002628	TI 	@702
+002634	TI 	@739
+002640	TI 	@773
+00264C	TI 	@786
+002658	TI 	@788
+002664	TI 	@460										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+002670	TI 	@480
+00267C	TI 	@487
+002688	TI 	@495
+002694	TI 	@497
+0026A0	TI 	@504
+
+Data section, size = 3644 bytes (TOC anchor = 000000)
+000000	TC 	__ct__10BMessengerFPC8BHandlerPC7BLooperPl	file = "*Linker-Generated*"
+000004	TC 	PaperRect__9BPrintJobFv
+000008	TC 	Settings__9BPrintJobFv
+00000C	TC 	Unflatten__8BMessageFP7BDataIO
+000010	TC 	__dt__9BMimeTypeFv
+000014	TC 	SetType__9BNodeInfoFPCc
+000018	TC 	BeginJob__9BPrintJobFv
+00001C	TC 	Lock__7BLooperFv
+000020	TC 	__dt__9BPrintJobFv
+000024	TC 	GetType__9BNodeInfoCFPc
+000028	TC 	__ct__12BApplicationFPCc
+00002C	TC 	ItemAt__5BListCFl
+000030	TC 	AddItem__5BMenuFP9BMenuItem
+000034	TC 	instantiate_object__FP8BMessage
+000038	TC 	__ct__5BFileFPCcUl
+00003C	TC 	Unlock__7BLockerFv
+000040	TC 	MessageReceived__7BWindowFP8BMessage
+000044	TC 	__ct__10BMessengerFRC10BMessenger
+000048	TC 	__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+00004C	TC 	__ct__5BListFl
+000050	TC 	__ct__5BMenuFPCc11menu_layout
+000054	TC 	Unlock__7BLooperFv
+000058	TC 	__dt__10BDirectoryFv
+00005C	TC 	FindMessage__8BMessageCFPCclP8BMessage
+000060	TC 	CommitJob__9BPrintJobFv
+000064	TC 	__dt__10BMessengerFv
+000068	TC 	__ct__10BDirectoryFv
+00006C	TC 	__ct__8BMessageFUl
+000070	TC 	PostMessage__7BLooperFUl
+000074	TC 	__ct__9BPrintJobFPCc
+000078	TC 	AddChild__7BWindowFP5BViewP5BView
+00007C	TC 	Path__5BPathCFv
+000080	TC 	__ct__9BNodeInfoFP5BNode
+000084	TC 	__dt__5BNodeFv
+000088	TC 	__dt__7BStringFv
+00008C	TC 	__dt__7BWindowFv
+000090	TC 	__ct__7BStringFv
+000094	TC 	__ct__5BNodeFPC9entry_ref
+000098	TC 	__ct__9BNodeInfoFv
+00009C	TC 	FindString__8BMessageCFPCcl
+0000A0	TC 	__nw__8BMessageFUl
+0000A4	TC 	__ct__5BPathFv
+0000A8	TC 	SetSettings__9BPrintJobFP8BMessage
+0000AC	TC 	__dt__5BPathFv
+0000B0	TC 	InitCheck__5BNodeCFv
+0000B4	TC 	__ct__9entry_refFv
+0000B8	TC 	__ct__9BMimeTypeFPCc
+0000BC	TC 	PrintableRect__9BPrintJobFv
+0000C0	TC 	__ct__8BMenuBarF5BRectPCcUl11menu_layoutb
+0000C4	TC 	__dt__9entry_refFv
+0000C8	TC 	IsMarked__9BMenuItemCFv
+0000CC	TC 	__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+0000D0	TC 	__dt__9BNodeInfoFv
+0000D4	TC 	SetPreferredApp__9BNodeInfoFPCc8app_verb
+0000D8	TC 	FindRef__8BMessageCFPCcP9entry_ref
+0000DC	TC 	SetTo__5BPathFPC10BDirectoryPCcb
+0000E0	TC 	SetTo__10BDirectoryFPC9entry_ref
+0000E4	TC 	__ct__8BMessageFv
+0000E8	TC 	CountItems__5BListCFv
+0000EC	TC 	__ct__9BMenuItemFPCcP8BMessagecUl
+0000F0	TC 	ConfigPage__9BPrintJobFv
+0000F4	TC 	Go__6BAlertFv
+0000F8	TC 	DetachCurrentMessage__7BLooperFv
+0000FC	TC 	InitCheck__9BNodeInfoCFv
+000100	TC 	SetTo__10BDirectoryFPCc
+000104	TC 	InsetBy__5BRectFff
+000108	TC 	SetTo__9BNodeInfoFP5BNode
+00010C	TC 	__dt__12BApplicationFv
+000110	TC 	AddSeparatorItem__5BMenuFv
+000114	TC 	Type__9BMimeTypeCFv
+000118	TC 	MessageReceived__12BApplicationFP8BMessage
+00011C	TC 	ConfigJob__9BPrintJobFv
+000120	TC 	__ct__5BFileFPC9entry_refUl
+000124	TC 	InitCheck__5BPathCFv
+000128	TC 	SpoolPage__9BPrintJobFv
+00012C	TC 	AddItem__5BMenuFP5BMenu
+000130	TC 	exit
+000134	TC 	__dl__FPv
+000138	TC 	__register_fragment
+00013C	TC 	strcat
+000140	TC 	strcmp
+000144	TC 	strcpy
+000148	TC 	_call_init_routines_
+00014C	TC 	find_thread
+000150	TC 	__dynamic_cast
+000154	TC 	__unregister_fragment
+000158	TC 	__nw__FUl
+00015C	TC 	_thread_do_exit_notification
+000160	TC 	get_image_symbol
+000164	TC 	SetTarget__10BFilePanelF10BMessenger
+000168	TC 	SetPanelDirectory__10BFilePanelFPC10BDirectory
+00016C	TC 	Show__10BFilePanelFv
+000170	TC 	__ct__10BFilePanelF15file_panel_modeP10BMessengerPC9entry_refUlbP8BMessageP10BRefFilterbb
+000174	TC 	SetSaveText__10BFilePanelFPCc
+000178	TC 	__global_destructor_chain
+00017C	TC 	__exception_table_end__
+000180	TC 	__exception_table_start__
+000184	TC 	__data_end__
+000188	TC 	__data_start__
+00018C	TC 	__code_end__
+000190	TC 	__code_start__
+000194	TC 	__main_thread_id
+000198	TC 	environ
+00019C	TC 	argv_save
+0001A0	TC 	be_app
+0001A4	TC 	__vt__10DPMRWindow
+0001A8	TC 	__vt__10DPMultRegr
+0001AC	TC 	@27											file = "common/init_term_dyn.c"
+0001B0	TC 	@26
+0001B4	TC 	@19
+0001B8	TC 	@18
+0001BC	TC 	default_environ								file = "common/start_dyn.c"
+0001C0	TC 	@771										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+0001C4	TC 	@770
+0001C8	TC 	@769
+0001CC	TC 	data_plus_multregr_sig
+0001D0	TC 	mr_mime_type
+0001D4	TC 	@768
+0001D8	TC 	@767
+0001DC	TC 	@736
+0001E0	TC 	@700
+0001E4	TC 	@699
+0001E8	TC 	@697
+0001EC	TC 	@696
+0001F0	TC 	__RTTI__11BArchivable
+0001F4	TC 	__RTTI__6DPData
+0001F8	TC 	regrplot_mime_type
+0001FC	TC 	@695
+000200	TC 	@604
+000204	TC 	@603
+000208	TC 	@602
+00020C	TC 	@601
+000210	TC 	data_set_str
+000214	TC 	__RTTI__12BApplication
+000218	TC 	__RTTI__10DPMultRegr
+00021C	TC 	@538
+000220	TC 	@537
+000224	TC 	@536
+000228	TC 	@535
+00022C	TC 	@534
+000230	TC 	@533
+000234	TC 	@532
+000238	TC 	@531
+00023C	TC 	@530
+000240	TC 	@529
+000244	TC 	@528
+000248	TC 	@527
+00024C	TC 	@526
+000250	TC 	@525
+000254	TC 	@519
+000258	TC 	@492										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+00025C	TC 	data_plus_multregr_sig
+000260	TD 	fragmentID									file = "common/init_term_dyn.c"
+000264	TD 	@524										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+000267	TD 	@698
+00026C	TD 	@737
+000270	TD 	@523
+000274	TD 	@522
+000278	TD 	@521
+00027C	TD 	@520
+000280	TD 	@491										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+000281	TD 	@493
+000284	TD 	@478
+000288	TD 	@477
+00028C	DS 	_term_routine_								file = "common/init_term_dyn.c"
+000294	DS 	_init_routine_
+00029C	DS 	__start										file = "common/start_dyn.c"
+0002A4	DS 	QuitRequested__10DPMRWindowFv				file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+0002AC	DS 	MenusBeginning__10DPMRWindowFv
+0002B4	DS 	FrameResized__10DPMRWindowFff
+0002BC	DS 	MessageReceived__10DPMRWindowFP8BMessage
+0002C4	DS 	__dt__10DPMRWindowFv
+0002CC	DS 	MessageReceived__10DPMultRegrFP8BMessage	file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+0002D4	DS 	AboutRequested__10DPMultRegrFv
+0002DC	DS 	__dt__10DPMultRegrFv
+0002E4	TB 	@539										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+000548	TB 	@605
+00055A	TB 	@618
+000596	TB 	@630
+0005D2	TB 	@701
+000694	TB 	@738
+0006BA	TB 	@772
+000738	TB 	@785
+00074A	TB 	@459										file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+00075C	TB 	@479
+0007A6	TB 	@494
+0007B8	TB 	@503
+0007CA	RW 	@18											file = "common/init_term_dyn.c"
+0007DC	RW 	@19
+0007ED	RW 	@26
+0007FE	RW 	@27
+00080E	RW 	@12											file = "common/start_dyn.c"
+000820	RW 	default_environ
+000828	RW 	data_plus_multregr_sig						file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMRWindow.cpp"
+000868	RW 	regrplot_mime_type
+000888	RW 	mr_mime_type
+0008A8	RW 	data_set_str
+0008B8	RW 	@519
+0008C3	RW 	@525
+0008C8	RW 	@526
+0008D1	RW 	@527
+0008D9	RW 	@528
+0008DE	RW 	@529
+0008E9	RW 	@530
+0008F8	RW 	@531
+000901	RW 	@532
+000906	RW 	@533
+00090B	RW 	@534
+000919	RW 	@535
+000922	RW 	@536
+00092D	RW 	@537
+000936	RW 	@538
+00093F	RW 	@546
+00094A	RW 	@548
+000958	RW 	__RTTI__11BArchivable
+000960	RW 	@549
+00096C	RW 	@550
+000978	RW 	__RTTI__8BHandler
+000980	RW 	@551
+000988	RW 	@552
+00099C	RW 	__RTTI__7BLooper
+0009A4	RW 	@553
+0009B4	RW 	@554
+0009D0	RW 	__RTTI__12BApplication
+0009D8	RW 	@547
+0009FC	RW 	__RTTI__10DPMultRegr
+000A04	RW 	@601
+000A0C	RW 	@602
+000A26	RW 	@603
+000A2D	RW 	@604
+000A38	RW 	@671
+000A40	RW 	@672
+000A4C	RW 	__RTTI__6DPData
+000A54	RW 	@695
+000A59	RW 	@696
+000A5F	RW 	@697
+000A74	RW 	@699
+000A7A	RW 	@700
+000A94	RW 	@736
+000A9E	RW 	@767
+000AA8	RW 	@768
+000AAD	RW 	@769
+000ABD	RW 	@770
+000AD2	RW 	@771
+000ADC	RW 	@789
+000AE7	RW 	@791
+000AF0	RW 	@792
+000B0C	RW 	__RTTI__7BWindow
+000B14	RW 	@790
+000B38	RW 	__RTTI__10DPMRWindow
+000B40	RW 	__vt__10DPMRWindow
+000C18	RW 	data_plus_multregr_sig						file = "/boot/home/develop/dataplus/Data+ copy/DPMultRegr/DPMultRegr.cpp"
+000C58	RW 	@492
+000CAC	RW 	@506
+000CB7	RW 	@508
+000CC4	RW 	__RTTI__11BArchivable
+000CCC	RW 	@509
+000CD8	RW 	@510
+000CE4	RW 	__RTTI__8BHandler
+000CEC	RW 	@511
+000CF4	RW 	@512
+000D08	RW 	__RTTI__7BLooper
+000D10	RW 	@513
+000D20	RW 	@514
+000D3C	RW 	__RTTI__12BApplication
+000D44	RW 	@507
+000D68	RW 	__RTTI__10DPMultRegr
+000D70	RW 	__vt__10DPMultRegr
+000E34	RW 	__global_destructor_chain					file = "common/global_destructor_chain.c"
+
+Import container "libbe.so"
+Current Version = 00000000, Old Implementation = 00000000
+000000	DS 	RefsReceived__12BApplicationFP8BMessage
+000001	DS 	__ct__10BMessengerFPC8BHandlerPC7BLooperPl
+000002	DS 	PaperRect__9BPrintJobFv
+000003	DS 	AppActivated__12BApplicationFb
+000004	DS 	Settings__9BPrintJobFv
+000005	DS 	Unflatten__8BMessageFP7BDataIO
+000006	RW 	be_app
+000007	DS 	__dt__9BMimeTypeFv
+000008	DS 	SetType__9BNodeInfoFPCc
+000009	DS 	Archive__12BApplicationCFP8BMessageb
+00000A	DS 	Perform__7BWindowFUlPv
+00000B	DS 	BeginJob__9BPrintJobFv
+00000C	DS 	Lock__7BLooperFv
+00000D	DS 	RemoveCommonFilter__7BLooperFP14BMessageFilter
+00000E	DS 	__dt__9BPrintJobFv
+00000F	DS 	MenusEnded__7BWindowFv
+000010	DS 	GetType__9BNodeInfoCFPc
+000011	DS 	__ct__12BApplicationFPCc
+000012	DS 	ItemAt__5BListCFl
+000013	DS 	AddItem__5BMenuFP9BMenuItem
+000014	DS 	instantiate_object__FP8BMessage
+000015	DS 	_ReservedWindow5__7BWindowFv
+000016	DS 	_ReservedHandler4__8BHandlerFv
+000017	DS 	_ReservedWindow4__7BWindowFv
+000018	DS 	_ReservedWindow3__7BWindowFv
+000019	DS 	QuitRequested__12BApplicationFv
+00001A	DS 	_ReservedWindow8__7BWindowFv
+00001B	DS 	_ReservedWindow2__7BWindowFv
+00001C	DS 	_ReservedWindow7__7BWindowFv
+00001D	DS 	__ct__5BFileFPCcUl
+00001E	DS 	_ReservedWindow1__7BWindowFv
+00001F	DS 	Unlock__7BLockerFv
+000020	DS 	_ReservedWindow6__7BWindowFv
+000021	DS 	_ReservedHandler3__8BHandlerFv
+000022	DS 	WindowActivated__7BWindowFb
+000023	DS 	WorkspacesChanged__7BWindowFUlUl
+000024	DS 	_ReservedArchivable1__11BArchivableFv
+000025	DS 	task_looper__7BWindowFv
+000026	DS 	_ReservedHandler2__8BHandlerFv
+000027	DS 	GetSupportedSuites__7BWindowFP8BMessage
+000028	DS 	MessageReceived__7BWindowFP8BMessage
+000029	DS 	__ct__10BMessengerFRC10BMessenger
+00002A	DS 	DispatchMessage__7BWindowFP8BMessageP8BHandler
+00002B	DS 	_ReservedApplication8__12BApplicationFv
+00002C	DS 	__ct__7BWindowF5BRectPCc11window_look11window_feelUlUl
+00002D	DS 	__ct__5BListFl
+00002E	DS 	GetSupportedSuites__12BApplicationFP8BMessage
+00002F	DS 	__ct__5BMenuFPCc11menu_layout
+000030	DS 	_ReservedApplication7__12BApplicationFv
+000031	DS 	_ReservedArchivable3__11BArchivableFv
+000032	DS 	Unlock__7BLooperFv
+000033	DS 	__dt__10BDirectoryFv
+000034	DS 	FindMessage__8BMessageCFPCclP8BMessage
+000035	DS 	CommitJob__9BPrintJobFv
+000036	DS 	ReadyToRun__12BApplicationFv
+000037	DS 	_ReservedApplication1__12BApplicationFv
+000038	DS 	ScreenChanged__7BWindowF5BRect11color_space
+000039	DS 	ResolveSpecifier__7BWindowFP8BMessagelP8BMessagelPCc
+00003A	DS 	__dt__9BAutolockFv
+00003B	DS 	__dt__10BMessengerFv
+00003C	DS 	__ct__10BDirectoryFv
+00003D	DS 	__ct__8BMessageFUl
+00003E	DS 	PostMessage__7BLooperFUl
+00003F	DS 	__ct__9BPrintJobFPCc
+000040	DS 	AddChild__7BWindowFP5BViewP5BView
+000041	DS 	AddCommonFilter__7BLooperFP14BMessageFilter
+000042	DS 	Path__5BPathCFv
+000043	DS 	__ct__9BNodeInfoFP5BNode
+000044	DS 	__dt__5BNodeFv
+000045	DS 	Minimize__7BWindowFb
+000046	DS 	__dl__8BMessageFPvUl
+000047	DS 	SetCommonFilterList__7BLooperFP5BList
+000048	DS 	Archive__7BWindowCFP8BMessageb
+000049	DS 	__dt__7BStringFv
+00004A	DS 	_ReservedApplication4__12BApplicationFv
+00004B	DS 	__dt__7BWindowFv
+00004C	DS 	Hide__7BWindowFv
+00004D	DS 	Pulse__12BApplicationFv
+00004E	DS 	_ReservedApplication6__12BApplicationFv
+00004F	DS 	Quit__7BWindowFv
+000050	DS 	__ct__7BStringFv
+000051	DS 	__ct__5BNodeFPC9entry_ref
+000052	DS 	Show__7BWindowFv
+000053	DS 	__ct__9BNodeInfoFv
+000054	DS 	FindString__8BMessageCFPCcl
+000055	DS 	_ReservedApplication2__12BApplicationFv
+000056	DS 	__nw__8BMessageFUl
+000057	DS 	__ct__5BPathFv
+000058	DS 	_ReservedApplication5__12BApplicationFv
+000059	DS 	_ReservedApplication3__12BApplicationFv
+00005A	DS 	SetSettings__9BPrintJobFP8BMessage
+00005B	DS 	__dt__5BPathFv
+00005C	DS 	InitCheck__5BNodeCFv
+00005D	DS 	Quit__12BApplicationFv
+00005E	DS 	__ct__9entry_refFv
+00005F	DS 	FrameMoved__7BWindowF6BPoint
+000060	DS 	__ct__9BMimeTypeFPCc
+000061	DS 	PrintableRect__9BPrintJobFv
+000062	DS 	__ct__8BMenuBarF5BRectPCcUl11menu_layoutb
+000063	DS 	__dt__9entry_refFv
+000064	DS 	ConvertToMessage__7BLooperFPvl
+000065	DS 	IsMarked__9BMenuItemCFv
+000066	DS 	__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+000067	DS 	__dt__9BNodeInfoFv
+000068	DS 	SetPreferredApp__9BNodeInfoFPCc8app_verb
+000069	DS 	DispatchMessage__12BApplicationFP8BMessageP8BHandler
+00006A	DS 	_ReservedLooper1__7BLooperFv
+00006B	DS 	FindRef__8BMessageCFPCcP9entry_ref
+00006C	DS 	_ReservedLooper4__7BLooperFv
+00006D	DS 	_ReservedLooper2__7BLooperFv
+00006E	DS 	Zoom__7BWindowF6BPointff
+00006F	DS 	_ReservedLooper5__7BLooperFv
+000070	DS 	SetTo__5BPathFPC10BDirectoryPCcb
+000071	DS 	SetTo__10BDirectoryFPC9entry_ref
+000072	DS 	ResolveSpecifier__12BApplicationFP8BMessagelP8BMessagelPCc
+000073	DS 	__ct__8BMessageFv
+000074	DS 	_ReservedLooper6__7BLooperFv
+000075	DS 	CountItems__5BListCFv
+000076	DS 	__ct__9BMenuItemFPCcP8BMessagecUl
+000077	DS 	ConfigPage__9BPrintJobFv
+000078	DS 	SendNotices__8BHandlerFUlPC8BMessage
+000079	DS 	_ReservedLooper3__7BLooperFv
+00007A	DS 	Go__6BAlertFv
+00007B	DS 	DetachCurrentMessage__7BLooperFv
+00007C	DS 	InitCheck__9BNodeInfoCFv
+00007D	DS 	SetTo__10BDirectoryFPCc
+00007E	DS 	Perform__12BApplicationFUlPv
+00007F	DS 	_ReservedArchivable2__11BArchivableFv
+000080	DS 	ScriptReceived__12BApplicationFP8BMessagelP8BMessagelPCc
+000081	DS 	InsetBy__5BRectFff
+000082	DS 	SetTo__9BNodeInfoFP5BNode
+000083	DS 	__dt__12BApplicationFv
+000084	DS 	AddSeparatorItem__5BMenuFv
+000085	DS 	SetNextHandler__8BHandlerFP8BHandler
+000086	DS 	RemoveFilter__8BHandlerFP14BMessageFilter
+000087	DS 	ConvertToMessage__7BWindowFPvl
+000088	DS 	Type__9BMimeTypeCFv
+000089	DS 	Run__12BApplicationFv
+00008A	DS 	task_looper__7BLooperFv
+00008B	DS 	ArgvReceived__12BApplicationFlPPc
+00008C	DS 	MessageReceived__12BApplicationFP8BMessage
+00008D	DS 	WorkspaceActivated__7BWindowFlb
+00008E	DS 	SetFilterList__8BHandlerFP5BList
+00008F	DS 	ConfigJob__9BPrintJobFv
+000090	DS 	__ct__5BFileFPC9entry_refUl
+000091	DS 	InitCheck__5BPathCFv
+000092	DS 	AddFilter__8BHandlerFP14BMessageFilter
+000093	DS 	SpoolPage__9BPrintJobFv
+000094	DS 	AddItem__5BMenuFP5BMenu
+000095	DS 	Run__7BWindowFv
+
+Import container "libroot.so"
+Current Version = 00000000, Old Implementation = 00000000
+000096	RW 	environ
+000097	DS 	exit
+000098	DS 	__dl__FPv
+000099	DS 	__register_fragment
+00009A	DS 	strcat
+00009B	DS 	strcmp
+00009C	DS 	strcpy
+00009D	DS 	_call_init_routines_
+00009E	RW 	argv_save
+00009F	DS 	find_thread
+0000A0	DS 	__dynamic_cast
+0000A1	DS 	__unregister_fragment
+0000A2	RW 	__main_thread_id
+0000A3	DS 	__nw__FUl
+0000A4	DS 	_thread_do_exit_notification
+0000A5	DS 	get_image_symbol
+
+Import container "libtracker.so"
+Current Version = 00000000, Old Implementation = 00000000
+0000A6	DS 	SetTarget__10BFilePanelF10BMessenger
+0000A7	DS 	SetPanelDirectory__10BFilePanelFPC10BDirectory
+0000A8	DS 	Show__10BFilePanelFv
+0000A9	DS 	__ct__10BFilePanelF15file_panel_modeP10BMessengerPC9entry_refUlbP8BMessageP10BRefFilterbb
+0000AA	DS 	SetSaveText__10BFilePanelFPCc
+
+Removed unused TOC-reload slots:   0x00000000

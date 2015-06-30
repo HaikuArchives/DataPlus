@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>regrdocs.</TITLE>
+</HEAD>
+<BODY BODY BGCOLOR="#FFFFFF"> 
+<P ALIGN="center"><FONT COLOR="#000000" SIZE=5>&nbsp;</FONT><FONT COLOR="#000000" SIZE=3></P>
+<P ALIGN="center"><IMG SRC="regrdocs.images/regr.gif" WIDTH="48" HEIGHT="48" HSPACE="5"><FONT SIZE=6>  Linear  Regression Analysis  </FONT><IMG SRC="regrdocs.images/regr.gif" WIDTH="48" HEIGHT="48" HSPACE="5"></P>
+<hr>
+<P>If you have followed the directions for looking at the native sample file, you should have a screen that looks like this:</P>
+<P><IMG SRC="regrdocs.images/main.png" BORDER=0 WIDTH="702" HEIGHT="384"></P>
+<P>Looking first at the box in the right side of the window, we see that it displays the results of the regression analysis. The fields are:</FONT></P>
+<P ><B>Mean and SD (Standard Deviation):</B> These are computed for each axis.</P>
+<P><B>Regression Data:</B> The regression slope (Y/X) and regression intercept are shown, along with their standard deviations.</P>
+<P><B>Correlation Statistics:</B> The Standard Error of the Mean for Y is shown, both in relative and absolute terms. Pearson's r-value, "student" t-value and the p-value are also given.</P>
+
+<P>Just below the box are menus for setting the plot mark, plot color and line type. Experiment with them to see what happens. After you choose some new settings, click on the "Apply" button for them to take effect. NOTE that if there were two or more data sets chosen, there would be a regression data box for each set. More about this later...</P>
+<P>On the side of the window showing the plot, there is an "odometer" in the menu bar which gives the location of the cursor in terms of the graph axes.</P>
+<hr>
+<P><FONT SIZE=4><B>Zooming In:</B></FONT></P>
+<P>Notice the small icon in the upper right corner of the menu bar. Click on it <FONT COLOR="#ff3333">now</FONT> and the results will be hidden. A portion of interest in the graph may be selected by simply clicking, holding and dragging to outline an area to be expanded:</P>
+
+<P><IMG SRC="regrdocs.images/zoomsel.png" WIDTH="361" HEIGHT="384"></P>
+<P>The graph axes will be reset to approximately the bounds chosen. Note that nothing will happen if too small an area is selected. To look at a very tiny area, you will need to select more than one time in succession.</P>
+<P><IMG SRC="regrdocs.images/zoomed.png" WIDTH="362" HEIGHT="385"></P>
+<P>This is the area selected as shown above. Note that the sizing algorithm adjusts the axes to rounded values.</P>
+<hr>
+<P><FONT SIZE=4><B>Setting Specific Axis Values:</B></FONT></P>
+<IMG SRC="regrdocs.images/setaxes.png" ALIGN=left HSPACE=5 WIDTH="346" HEIGHT="217">
+<br>Notice that the original window, as created, was auto-scaled to show all of the data points. This often the optimal presentaation, but it is also possible to set any axis values. 
+<P>To do this, choose "Set Axes..." from the "Data" menu.</P>
+This dialog box allows the user to set specific axis values. Enter the ones shown, starting with the "Interval". When both axes are so set, click the "Apply" button and the values will changed on the graph as shown below:
+<P></P>
+<P><IMG SRC="regrdocs.images/newaxes.png" HSPACE=5 VSPACE=5 WIDTH="360" HEIGHT="386"></P>
+
+<P>To go back to the original axes, choose "Reset Axes" from the "Data" menu.</P>
+<hr>
+<P><FONT SIZE=4><B>Comparing Data Across Graphs:</B></FONT><P>
+<P>Now we will make a second graph and show how data points can be compared across graphs. In the DataPlus Console, press the "Select Fields" button and select  data fields shown.</P>
+<P><IMG SRC="regrdocs.images/set2.png" WIDTH="372" HEIGHT="229"></P>
+<P>Then, create another regression graph by clicking the regression analysis icon. Then click the upper-right icon to hide the regression data.</P>
+<P><IMG SRC="regrdocs.images/marksel.png" WIDTH="361" HEIGHT="384"></P>
+<P>First, hold down the &lt;shift&gt; key and outline the box as show. Note that the cursor changes to a cross when the shift key is held down. This shows that you are in a data selection mode. When the mouse button is released, the data points in the selected area are collected and presented in a dialog:</P>
+<hr>
+<P><FONT SIZE=4><B>Marking Data:</B></FONT><P>
+<IMG SRC="regrdocs.images/markdlog.png" ALIGN=LEFT HSPACE=5 VSPACE=5 WIDTH="194" HEIGHT="302">
+<BR>
+<BR>
+In this exercise, we will mark the points. 'Mark' is the default selection of the three available. Click on the small red patch in the color control and note that the large patch to the left also becomes red. This shows the marking color. Click on the "Apply" button.
+<P>What happens is that a message is sent to ALL DataPlus programs currently  running. In our case, it is the two regression plot applications plus the DataPlus Console itself. There is a menu selection in the 'Data' menu, "Allow Marking". If this is checked, the message directs the applications to mark the chosen data points with the selected color. The default for the <NOBR>'DataPlus'</NOBR> Console is FALSE, and the default is TRUE for all analysis tools. The other choices are:
+<br>
+<br>
+<B>Suppress: </B>This marks the point with a special symbol and removes it from the analysis.
+<br>
+<br>
+<B>Delete:</B> This deletes the point from the graph and removes it from the analysis. It does not actually delete the point. Note that this can be very useful for 'cleaning up' a data set. If the DataPlus Console is enabled for marking, and if bad data records are 'Deleted' in one of the analysis tools, the 'deleted' records won't be shipped to any other analysis tools. The deletion can be removed by the 'Unselect' menu item in the 'Data' menu.</P>
+
+<P><IMG SRC="regrdocs.images/twomarked.png" WIDTH="719" HEIGHT="385"></P>
+<P>Note now that the points selected on the lower left of the left-most graph are marked in red. Most importantly, note that there are points on the right-most graph which are also marked. These are points from the same record (row). The information here is that the points selected as being low on both the X and Y axes in the first graph are evenly distributed in the second, and therefore there is likely to be little significant interaction between the two sets of variables.</P>
+<hr>
+<P><FONT SIZE=4><B>Using Multiple Data Sets:</B></FONT></P>
+
+<P><IMG SRC="regrdocs.images/twosets.png" ALIGN=LEFT HSPACE=5 WIDTH="238" HEIGHT="307">
+<BR>
+A number of related sets may be examined in the same graph as long as the axes are the same. (Actually, they don't have to be the same, but since they are plotted on the same axis, it would be very confusing if they were different). For example, if experiments are run on two separate days, it is often good to simultaneously examine the results to see any variation. The following example illustrates this:
+<BR>
+In the DataPlus Console, drop the files "Native_Set" and "Native_Set#2" into the drop view. They may  be dropped singly or together. 
+<BR>
+<BR>
+The result should look like this:</P>
+
+<P>From the "Native_Set", select the first two fields as 'X' and 'Y' respectively. Do the same for "Native_Set#2". Then, click the regression analysis button, and a display showing both sets of data will appear, and each have their own set of regresion data and regression lines:</P>
+
+<IMG SRC="regrdocs.images/dblsetdisp.png" VSPACE=5 WIDTH="713" HEIGHT="385">
+<br clear="all"><br>
+To make it easier to see the two separate sets, choose the green color for "Native_Set#2" and click "Apply". All of the data points and the regression line are colored.  This can be done with any number of data sets.
+
+<P><IMG SRC="regrdocs.images/dblcol.png" WIDTH="713" HEIGHT="385"></P>
+<P>If you want to see the statistics for the combined sets, click on the "Combine" checkbox between the two sets in the DataPlus Console. This places all of the data points into a single set.</P>
+<P><IMG SRC="regrdocs.images/combine.png" WIDTH="238" HEIGHT="308"></P>
+<P>Clicking on the regression analysis icon will now yield a single graph:</P>
+<P><IMG SRC="regrdocs.images/combined.png" WIDTH="714" HEIGHT="384"></P>
+<P>NOTE that if a file is saved with the "Combine" option checked, only the data in the selected fields will be combined, and the distinction between the sets will be lost.</P>
+<hr>
+<h3>Saving and Printing Data</h3>
+<p>
+Saving and Printing choices are found in the "File" menu. Printing acts like one would expect. Saving allows the regression plot tool to keep both its data and settings. The file created will not contain all of the fields found in the DataPlus Console and can only be opened by the regression tool. 
+</p>
+<h3>Continue the tutorial <A HREF="../DistDocs/distdocs.html">here</A></h3>
+<h3><A HREF="../index.html"><IMG SRC="../index.images/dpicon.gif" HEIGHT="16" WIDTH="16" VSPACE="0" HSPACE="5" BORDER="0">Back To Index</A></h3>
+
+</BODY>
+</HTML>

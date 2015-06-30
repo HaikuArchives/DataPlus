@@ -1,0 +1,767 @@
+File:    1	"MWOBPPC "
+File:    7	"libbe.so"
+File:    8	"libroot.so"
+File:    9	"/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+File:   10	"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+File:   11	"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+File:   12	"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+File:   13	"/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+File:   14	"/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+File:   15	"/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+File:   16	"/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+File:   19	"/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+File:   20	"/boot/home/develop/dataplus/SWClasses/Utilities/U_Conversions.c"
+
+Files that were not referenced:
+"/boot/home/develop/dataplus/SWClasses/Utilities/URealFmt_Utils.c"
+"/boot/home/develop/dataplus/SWClasses/Utilities/WU_AppUtils.cp"
+
+Code section, size = 21184 bytes
+000000	PR 	.__sinit									file = "*Linker-Generated*"
+00001C	PR 	.__destroy_global_chain						file = "common/global_destructor_chain.c"
+000070	PR 	.__RTOC										file = "common/init_term_dyn.c"
+000078	PR 	._init_routine_
+000128	PR 	._term_routine_
+0001B8	PR 	.__start									file = "common/start_dyn.c"
+00024C	PR 	.__ct__16DPDataConversionFv					file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0002C4	PR 	.__dt__16DPDataConversionFv
+0003B0	PR 	.ConvertData__16DPDataConversionFPC9entry_ref
+000644	PR 	.ConvertFile__16DPDataConversionFPC9entry_ref
+000838	PR 	.ConvertSet__16DPDataConversionFP9DPOldData
+000958	PR 	.ConvertType__16DPDataConversionFP13DPOldDataType
+0009D8	PR 	.ConvertRec__16DPDataConversionFP12DPOldDataRec
+000AE0	PR 	.RefsReceived__16DPDataConversionFP8BMessage
+000CC0	PR 	.main
+000D28	PR 	.__ct__6DPDataFv							file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+000D74	PR 	.__dt__6DPDataFv
+000ED4	PR 	.AddField__6DPDataFP10DPDataType
+000F64	PR 	.AddRecord__6DPDataFP9DPDataRec
+001054	PR 	.Archive__6DPDataCFP8BMessageb
+001580	PR 	.Archive__6DPDataCFP7BDataIOb
+0018E0	PR 	.Initialize__6DPDataFv
+0019C4	PR 	.MakeKey__9DPDataRecFv						file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+001A84	PR 	.__ct__9DPDataRecFs
+001CC4	PR 	.__dt__9DPDataRecFv
+001D40	PR 	.AddField__9DPDataRecFv
+001E30	PR 	.Archive__9DPDataRecCFP8BMessageb
+001EF4	PR 	.Archive__9DPDataRecCFP8BMessagesss
+0020A4	PR 	.Archive__9DPDataRecCFP7BDataIO
+00214C	PR 	.Archive__9DPDataRecCFP7BDataIOsss
+002324	PR 	.SetFieldValue__9DPDataRecFsf
+002368	PR 	.SetRecordName__9DPDataRecFPCc
+002428	PR 	.Initialize__9DPDataRecFv
+002470	PR 	.__ct__10DPDataTypeFUl						file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+0024CC	PR 	.__dt__10DPDataTypeFv
+00257C	PR 	.Archive__10DPDataTypeCFP8BMessageb
+0025F0	PR 	.Archive__10DPDataTypeCFP7BDataIOb
+00266C	PR 	.SetFieldName__10DPDataTypeFPCc
+00272C	PR 	.SetRealFormat__10DPDataTypeF11ERealFormats
+002738	PR 	.Initialize__10DPDataTypeFv
+00275C	PR 	.__ct__10DPDataFileFPC9entry_ref			file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+002810	PR 	.__dt__10DPDataFileFv
+002888	PR 	.AddData__10DPDataFileFPC6DPDatab
+002A78	PR 	.Clear__10DPDataFileFv
+002C14	PR 	.InitCheck__10DPDataFileFv
+002CB4	PR 	.ReadData__10DPDataFileFv
+002DCC	PR 	.@48@SetSize__5BFileFx
+002DE4	PR 	.@48@Position__5BFileCFv
+002DFC	PR 	.@48@Seek__5BFileFxUl
+002E14	PR 	.@48@WriteAt__5BFileFxPCvUl
+002E2C	PR 	.@48@ReadAt__5BFileFxPvUl
+002E44	PR 	.@48@Write__5BFileFPCvUl
+002E5C	PR 	.@48@Read__5BFileFPvUl
+002E74	PR 	.@48@__dt__10DPDataFileFv
+002E7C	PR 	.Instantiate__9DPOldDataFP8BMessage			file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+002EFC	PR 	.__ct__9DPOldDataFP8BMessage
+0032B0	PR 	.__dt__9DPOldDataFv
+003410	PR 	.AddField__9DPOldDataFP13DPOldDataType
+0034A0	PR 	.AddRecord__9DPOldDataFP12DPOldDataRec
+003590	PR 	.Archive__9DPOldDataCFP8BMessageb
+003B10	PR 	.Instantiate__13DPOldDataTypeFP8BMessage	file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+003B90	PR 	.__ct__13DPOldDataTypeFP8BMessage
+003C80	PR 	.__dt__13DPOldDataTypeFv
+003D30	PR 	.Archive__13DPOldDataTypeCFP8BMessageb
+003DCC	PR 	.MakeKey__12DPOldDataRecFv					file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+003E34	PR 	.Instantiate__12DPOldDataRecFP8BMessage
+003EB4	PR 	.__ct__12DPOldDataRecFP8BMessage
+004098	PR 	.__ct__12DPOldDataRecFP12DPOldDataRecsss
+004274	PR 	.__dt__12DPOldDataRecFv
+004308	PR 	.AddField__12DPOldDataRecFv
+00445C	PR 	.Archive__12DPOldDataRecCFP8BMessageb
+004588	PR 	.SetFieldValue__12DPOldDataRecFsf
+0045C4	PR 	.SetUse__12DPOldDataRecFsb
+0045F8	PR 	.Value__12DPOldDataRecCFsRf
+00463C	PR 	.CenterTruncate__FPci						file = "/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+0047D4	PR 	.ColorToValue__F9rgb_color					file = "/boot/home/develop/dataplus/SWClasses/Utilities/U_Conversions.c"
+004804	PR 	.ValueToColor__Fl
+004850	GL 	.get_image_symbol							file = "*Linker-Generated*"
+004868	GL 	.__register_fragment
+004880	GL 	.find_thread
+004898	GL 	._call_init_routines_
+0048B0	GL 	.__ct__12BApplicationFPCc
+0048C8	GL 	.ItemAt__5BListCFl
+0048E0	GL 	.CountItems__5BListCFv
+0048F8	GL 	.__dt__12BApplicationFv
+004910	GL 	.__dl__FPv
+004928	GL 	.__ct__9entry_refFv
+004940	GL 	.FindRef__8BMessageCFPCclP9entry_ref
+004958	GL 	.__ct__5BNodeFPC9entry_ref
+004970	GL 	.InitCheck__5BNodeCFv
+004988	GL 	.__ct__9BNodeInfoFP5BNode
+0049A0	GL 	.InitCheck__9BNodeInfoCFv
+0049B8	GL 	.GetType__9BNodeInfoCFPc
+0049D0	GL 	.__ct__9BMimeTypeFPCc
+0049E8	GL 	.Type__9BMimeTypeCFv
+004A00	GL 	.strcmp
+004A18	GL 	.__nw__FUl
+004A30	GL 	.__ct__5BFileFPC9entry_refUl
+004A48	GL 	.__nw__8BMessageFUl
+004A60	GL 	.__ct__8BMessageFv
+004A78	GL 	.Unflatten__8BMessageFP7BDataIO
+004A90	GL 	.FindMessage__8BMessageCFPCclP8BMessage
+004AA8	GL 	.validate_instantiation__FP8BMessagePCc
+004AC0	GL 	.__ct__11BArchivableFv
+004AD8	GL 	.__dt__11BArchivableFv
+004AF0	GL 	.strcpy
+004B08	GL 	.strcat
+004B20	GL 	.__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+004B38	GL 	.Go__6BAlertFv
+004B50	GL 	.AddString__8BMessageFPCcPCc
+004B68	GL 	.AddInt64__8BMessageFPCcx
+004B80	GL 	.AddBool__8BMessageFPCcb
+004B98	GL 	.__ct__8BMessageFUl
+004BB0	GL 	.AddMessage__8BMessageFPCcPC8BMessage
+004BC8	GL 	.AddInt16__8BMessageFPCcs
+004BE0	GL 	.AddInt32__8BMessageFPCcl
+004BF8	GL 	.AddData__8BMessageFPCcUlPCvlbl
+004C10	GL 	.__nwa__FUl
+004C28	GL 	.__ct__5BListFl
+004C40	GL 	.FindInt64__8BMessageCFPCcPx
+004C58	GL 	.real_time_clock_usecs
+004C70	GL 	.snooze
+004C88	GL 	.FindString__8BMessageCFPCcl
+004CA0	GL 	.FindInt32__8BMessageCFPCcPl
+004CB8	GL 	.FindInt16__8BMessageCFPCcl
+004CD0	GL 	.AddItem__5BListFPv
+004CE8	GL 	.FindString__8BMessageCFPCcPPCc
+004D00	GL 	.FindInt16__8BMessageCFPCcPs
+004D18	GL 	.FindData__8BMessageCFPCcUllPPCvPl
+004D30	GL 	.memcpy
+004D48	GL 	.FindBool__8BMessageCFPCclPb
+004D60	GL 	.FindBool__8BMessageCFPCcl
+004D78	GL 	.FindInt16__8BMessageCFPCclPs
+004D90	GL 	.__ct__6BEntryFPC9entry_refb
+004DA8	GL 	.InitCheck__6BEntryCFv
+004DC0	GL 	.GetName__6BEntryCFPc
+004DD8	GL 	.Rename__6BEntryFPCcb
+004DF0	GL 	.__dt__5BFileFv
+004E08	GL 	.acquire_sem
+004E20	GL 	.release_sem
+004E38	GL 	.strlen
+004E50	GL 	.GetSize__9BStatableCFPx
+004E68	GL 	.__ct__9BNodeInfoFv
+004E80	GL 	.SetTo__9BNodeInfoFP5BNode
+004E98	GL 	.SetType__9BNodeInfoFPCc
+004EB0	GL 	.SetPreferredApp__9BNodeInfoFPCc8app_verb
+004EC8	GL 	.IsInstalled__9BMimeTypeCFv
+004EE0	GL 	.Install__9BMimeTypeFv
+004EF8	GL 	.__dt__9BMimeTypeFv
+004F10	GL 	.__dt__9BNodeInfoFv
+004F28	GL 	.MakeEmpty__5BListFv
+004F40	GL 	.__dt__6BEntryFv
+004F58	GL 	.__dt__5BNodeFv
+004F70	GL 	.PostMessage__7BLooperFUl
+004F88	GL 	.__dt__9entry_refFv
+004FA0	GL 	._thread_do_exit_notification
+004FB8	GL 	.exit
+004FD0	GL 	.__unregister_fragment
+004FE8	GL 	.__ptr_glue									file = "ppc/runtime.c"
+004FFC	TI 	@7											file = "common/global_destructor_chain.c"
+005008	TI 	@20											file = "common/init_term_dyn.c"
+005014	TI 	@28
+005020	TI 	@16											file = "common/start_dyn.c"
+00502C	TI 	@467										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+005038	TI 	@482
+005044	TI 	@512
+005050	TI 	@550
+00505C	TI 	@569
+005068	TI 	@577
+005074	TI 	@604
+005080	TI 	@628
+00508C	TI 	@637
+005098	TI 	@468										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+0050A4	TI 	@599
+0050B0	TI 	@608
+0050BC	TI 	@626
+0050C8	TI 	@704
+0050D4	TI 	@755
+0050E0	TI 	@920
+0050EC	TI 	@460										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+0050F8	TI 	@493
+005104	TI 	@559
+005110	TI 	@567
+00511C	TI 	@576
+005128	TI 	@588
+005134	TI 	@592
+005140	TI 	@613
+00514C	TI 	@652
+005158	TI 	@675
+005164	TI 	@508										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+005170	TI 	@520
+00517C	TI 	@526
+005188	TI 	@530
+005194	TI 	@546
+0051A0	TI 	@472										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+0051AC	TI 	@484
+0051B8	TI 	@491
+0051C4	TI 	@499
+0051D0	TI 	@519
+0051DC	TI 	@543
+0051E8	TI 	@468										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+0051F4	TI 	@534
+005200	TI 	@560
+00520C	TI 	@569
+005218	TI 	@587
+005224	TI 	@670
+005230	TI 	@467										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+00523C	TI 	@476
+005248	TI 	@493
+005254	TI 	@499
+005260	TI 	@463										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+00526C	TI 	@472
+005278	TI 	@503
+005284	TI 	@533
+005290	TI 	@537
+00529C	TI 	@546
+0052A8	TI 	@555
+0052B4	TI 	@460										file = "/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+
+Data section, size = 3916 bytes (TOC anchor = 000000)
+000000	TC 	AddData__8BMessageFPCcUlPCvlbl				file = "*Linker-Generated*"
+000004	TC 	InitCheck__6BEntryCFv
+000008	TC 	FindBool__8BMessageCFPCclPb
+00000C	TC 	FindInt16__8BMessageCFPCcl
+000010	TC 	Unflatten__8BMessageFP7BDataIO
+000014	TC 	__dt__9BMimeTypeFv
+000018	TC 	SetType__9BNodeInfoFPCc
+00001C	TC 	GetType__9BNodeInfoCFPc
+000020	TC 	__ct__12BApplicationFPCc
+000024	TC 	ItemAt__5BListCFl
+000028	TC 	FindData__8BMessageCFPCcUllPPCvPl
+00002C	TC 	__dt__5BFileFv
+000030	TC 	FindBool__8BMessageCFPCcl
+000034	TC 	MakeEmpty__5BListFv
+000038	TC 	AddInt32__8BMessageFPCcl
+00003C	TC 	GetSize__9BStatableCFPx
+000040	TC 	AddInt16__8BMessageFPCcs
+000044	TC 	Seek__5BFileFxUl
+000048	TC 	Write__5BFileFPCvUl
+00004C	TC 	__ct__5BListFl
+000050	TC 	__dt__11BArchivableFv
+000054	TC 	Read__5BFileFPvUl
+000058	TC 	FindMessage__8BMessageCFPCclP8BMessage
+00005C	TC 	WriteAt__5BFileFxPCvUl
+000060	TC 	__ct__6BEntryFPC9entry_refb
+000064	TC 	Install__9BMimeTypeFv
+000068	TC 	IsInstalled__9BMimeTypeCFv
+00006C	TC 	__ct__8BMessageFUl
+000070	TC 	PostMessage__7BLooperFUl
+000074	TC 	__ct__9BNodeInfoFP5BNode
+000078	TC 	__dt__5BNodeFv
+00007C	TC 	validate_instantiation__FP8BMessagePCc
+000080	TC 	SetSize__5BFileFx
+000084	TC 	__ct__5BNodeFPC9entry_ref
+000088	TC 	FindRef__8BMessageCFPCclP9entry_ref
+00008C	TC 	__ct__9BNodeInfoFv
+000090	TC 	FindString__8BMessageCFPCcl
+000094	TC 	__nw__8BMessageFUl
+000098	TC 	Position__5BFileCFv
+00009C	TC 	InitCheck__5BNodeCFv
+0000A0	TC 	__ct__9entry_refFv
+0000A4	TC 	__ct__9BMimeTypeFPCc
+0000A8	TC 	FindInt64__8BMessageCFPCcPx
+0000AC	TC 	__dt__9entry_refFv
+0000B0	TC 	AddInt64__8BMessageFPCcx
+0000B4	TC 	AddMessage__8BMessageFPCcPC8BMessage
+0000B8	TC 	FindInt16__8BMessageCFPCclPs
+0000BC	TC 	__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+0000C0	TC 	__dt__9BNodeInfoFv
+0000C4	TC 	SetPreferredApp__9BNodeInfoFPCc8app_verb
+0000C8	TC 	FindInt16__8BMessageCFPCcPs
+0000CC	TC 	__ct__8BMessageFv
+0000D0	TC 	CountItems__5BListCFv
+0000D4	TC 	Go__6BAlertFv
+0000D8	TC 	FindInt32__8BMessageCFPCcPl
+0000DC	TC 	AddString__8BMessageFPCcPCc
+0000E0	TC 	InitCheck__9BNodeInfoCFv
+0000E4	TC 	__ct__11BArchivableFv
+0000E8	TC 	Rename__6BEntryFPCcb
+0000EC	TC 	SetTo__9BNodeInfoFP5BNode
+0000F0	TC 	__dt__12BApplicationFv
+0000F4	TC 	AddItem__5BListFPv
+0000F8	TC 	ReadAt__5BFileFxPvUl
+0000FC	TC 	Type__9BMimeTypeCFv
+000100	TC 	GetName__6BEntryCFPc
+000104	TC 	__ct__5BFileFPC9entry_refUl
+000108	TC 	AddBool__8BMessageFPCcb
+00010C	TC 	FindString__8BMessageCFPCcPPCc
+000110	TC 	__dt__6BEntryFv
+000114	TC 	__nwa__FUl
+000118	TC 	exit
+00011C	TC 	__dl__FPv
+000120	TC 	__register_fragment
+000124	TC 	memcpy
+000128	TC 	strcat
+00012C	TC 	strcmp
+000130	TC 	strcpy
+000134	TC 	strlen
+000138	TC 	_call_init_routines_
+00013C	TC 	release_sem
+000140	TC 	find_thread
+000144	TC 	__unregister_fragment
+000148	TC 	real_time_clock_usecs
+00014C	TC 	__nw__FUl
+000150	TC 	_thread_do_exit_notification
+000154	TC 	get_image_symbol
+000158	TC 	acquire_sem
+00015C	TC 	snooze
+000160	TC 	__global_destructor_chain
+000164	TC 	__exception_table_end__
+000168	TC 	__exception_table_start__
+00016C	TC 	__data_end__
+000170	TC 	__data_start__
+000174	TC 	__code_end__
+000178	TC 	__code_start__
+00017C	TC 	__main_thread_id
+000180	TC 	environ
+000184	TC 	argv_save
+000188	TC 	__vt__16DPDataConversion
+00018C	TC 	__vt__6DPData
+000190	TC 	__vt__9DPDataRec
+000194	TC 	lastKey
+000198	TC 	__vt__10DPDataType
+00019C	TC 	__vt__10DPDataFile
+0001A0	TC 	__vt__9DPOldData
+0001A4	TC 	__vt__13DPOldDataType
+0001A8	TC 	__vt__12DPOldDataRec
+0001AC	TC 	@27											file = "common/init_term_dyn.c"
+0001B0	TC 	@26
+0001B4	TC 	@19
+0001B8	TC 	@18
+0001BC	TC 	default_environ								file = "common/start_dyn.c"
+0001C0	TC 	@626										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0001C4	TC 	@625
+0001C8	TC 	old_mime_type
+0001CC	TC 	@624
+0001D0	TC 	@547
+0001D4	TC 	@546
+0001D8	TC 	data_set_str
+0001DC	TC 	data_plus_sig
+0001E0	TC 	native_mime_type
+0001E4	TC 	@510
+0001E8	TC 	@465
+0001EC	TC 	@702										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+0001F0	TC 	@700
+0001F4	TC 	@699
+0001F8	TC 	field_sel_str
+0001FC	TC 	data_sub_str
+000200	TC 	data_rec_str
+000204	TC 	data_type_str
+000208	TC 	@551
+00020C	TC 	set_name_str
+000210	TC 	set_key_str
+000214	TC 	@463
+000218	TC 	@575										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+00021C	TC 	str_rec_fields
+000220	TC 	str_rec_data
+000224	TC 	@467
+000228	TC 	@525										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+00022C	TC 	dp_data_str
+000230	TC 	@462
+000234	TC 	@668										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+000238	TC 	@666
+00023C	TC 	@665
+000240	TC 	field_sel_str
+000244	TC 	data_sub_str
+000248	TC 	data_rec_str
+00024C	TC 	data_type_str
+000250	TC 	set_name_str
+000254	TC 	set_key_str
+000258	TC 	@474
+00025C	TC 	@466
+000260	TC 	@498										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+000264	TC 	dp_rtype_str
+000268	TC 	dp_prec_str
+00026C	TC 	@474
+000270	TC 	dp_title_str
+000274	TC 	dp_type_str
+000278	TC 	@465
+00027C	TC 	@554										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+000280	TC 	str_rec_valid
+000284	TC 	str_rec_data
+000288	TC 	str_rec_mkColor
+00028C	TC 	str_rec_status
+000290	TC 	str_rec_numflds
+000294	TC 	str_rec_name
+000298	TC 	str_rec_key
+00029C	TC 	@470
+0002A0	TD 	fragmentID									file = "common/init_term_dyn.c"
+0002A4	TD 	@548										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0002A7	TD 	@634
+0002AB	TD 	@701										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+0002AE	TD 	color_red									file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+0002B4	TD 	@491
+0002B8	TD 	@667										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+0002BB	TD 	color_red									file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+0002C0	TD 	@483
+0002C4	TD 	@459										file = "/boot/home/develop/dataplus/SWClasses/Utilities/UStringFmt_Utils.c"
+0002C8	DS 	_term_routine_								file = "common/init_term_dyn.c"
+0002D0	DS 	_init_routine_
+0002D8	DS 	__start										file = "common/start_dyn.c"
+0002E0	DS 	RefsReceived__16DPDataConversionFP8BMessage	file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0002E8	DS 	__dt__16DPDataConversionFv
+0002F0	DS 	Archive__6DPDataCFP8BMessageb				file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+0002F8	DS 	__dt__6DPDataFv
+000300	DS 	Archive__9DPDataRecCFP8BMessageb			file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+000308	DS 	__dt__9DPDataRecFv
+000310	DS 	Archive__10DPDataTypeCFP8BMessageb			file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+000318	DS 	__dt__10DPDataTypeFv
+000320	DS 	@48@__dt__10DPDataFileFv					file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+000328	DS 	@48@Read__5BFileFPvUl
+000330	DS 	@48@Write__5BFileFPCvUl
+000338	DS 	@48@ReadAt__5BFileFxPvUl
+000340	DS 	@48@WriteAt__5BFileFxPCvUl
+000348	DS 	@48@Seek__5BFileFxUl
+000350	DS 	@48@Position__5BFileCFv
+000358	DS 	@48@SetSize__5BFileFx
+000360	DS 	InitCheck__10DPDataFileFv
+000368	DS 	__dt__10DPDataFileFv
+000370	DS 	Archive__9DPOldDataCFP8BMessageb			file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+000378	DS 	__dt__9DPOldDataFv
+000380	DS 	Archive__13DPOldDataTypeCFP8BMessageb		file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+000388	DS 	__dt__13DPOldDataTypeFv
+000390	DS 	Archive__12DPOldDataRecCFP8BMessageb		file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+000398	DS 	__dt__12DPOldDataRecFv
+0003A0	TB 	@466										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0003C4	TB 	@511
+000412	TB 	@549
+00044E	TB 	@568
+000460	TB 	@576
+000472	TB 	@603
+000484	TB 	@627
+0004E6	TB 	@636
+00050E	TB 	@467										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+000524	TB 	@703
+00057C	TB 	@754
+00058E	TB 	@919
+0005AE	TB 	@492										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+0005C4	TB 	@507										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+0005DA	TB 	@467										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+0005EC	TB 	@533
+000676	TB 	@669
+0006DC	TB 	@466										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+0006EE	TB 	@475
+000704	TB 	@471										file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+000716	TB 	@502
+00072C	TB 	@532
+000742	RW 	@18											file = "common/init_term_dyn.c"
+000754	RW 	@19
+000765	RW 	@26
+000776	RW 	@27
+000786	RW 	@12											file = "common/start_dyn.c"
+000798	RW 	default_environ
+0007A0	RW 	data_plus_sig								file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPFileConversion.cpp"
+0007E0	RW 	old_mime_type
+000800	RW 	native_mime_type
+000820	RW 	data_set_str
+000830	RW 	@465
+000850	RW 	@510
+000855	RW 	@546
+00085B	RW 	@547
+00086F	RW 	@624
+000874	RW 	@625
+00087D	RW 	@626
+000897	RW 	@638
+0008A8	RW 	@640
+0008B4	RW 	__RTTI__11BArchivable
+0008BC	RW 	@641
+0008C8	RW 	@642
+0008D4	RW 	__RTTI__8BHandler
+0008DC	RW 	@643
+0008E4	RW 	@644
+0008F8	RW 	__RTTI__7BLooper
+000900	RW 	@645
+000910	RW 	@646
+00092C	RW 	__RTTI__12BApplication
+000934	RW 	@639
+000958	RW 	__RTTI__16DPDataConversion
+000960	RW 	__vt__16DPDataConversion
+000A24	RW 	data_type_str								file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPData.cp"
+000A2C	RW 	data_rec_str
+000A34	RW 	set_key_str
+000A3C	RW 	data_sub_str
+000A44	RW 	set_name_str
+000A4C	RW 	field_sel_str
+000A54	RW 	@463
+000A5B	RW 	@507
+000A68	RW 	__RTTI__11BArchivable
+000A70	RW 	@551
+000A7D	RW 	@699
+000A9F	RW 	@700
+000AA9	RW 	@702
+000AB0	RW 	@921
+000ABC	RW 	__RTTI__6DPData
+000AC4	RW 	__vt__6DPData
+000AE4	RW 	str_rec_data								file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+000AEC	RW 	str_rec_fields
+000AF4	RW 	@467
+000AFE	RW 	@575
+000B04	RW 	@677
+000B10	RW 	__RTTI__11BArchivable
+000B18	RW 	@676
+000B24	RW 	__RTTI__9DPDataRec
+000B2C	RW 	__vt__9DPDataRec
+000B4C	RW 	dp_data_str									file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataType.cp"
+000B54	RW 	@462
+000B5F	RW 	@525
+000B65	RW 	@550
+000B74	RW 	__RTTI__11BArchivable
+000B7C	RW 	@549
+000B88	RW 	__RTTI__10DPDataType
+000B90	RW 	__vt__10DPDataType
+000BB0	RW 	@544										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataFile.cp"
+000BBB	RW 	@546
+000BC4	RW 	__RTTI__7BDataIO
+000BCC	RW 	@547
+000BD8	RW 	@548
+000BE4	RW 	__RTTI__11BPositionIO
+000BEC	RW 	@549
+000BF8	RW 	__RTTI__9BStatable
+000C00	RW 	@550
+000C08	RW 	@551
+000C14	RW 	__RTTI__5BNode
+000C1C	RW 	@552
+000C24	RW 	@553
+000C48	RW 	__RTTI__5BFile
+000C50	RW 	@545
+000C7C	RW 	__RTTI__10DPDataFile
+000C84	RW 	__vt__10DPDataFile
+000D40	RW 	data_type_str								file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldData.cp"
+000D48	RW 	data_rec_str
+000D50	RW 	set_key_str
+000D58	RW 	data_sub_str
+000D60	RW 	set_name_str
+000D68	RW 	field_sel_str
+000D70	RW 	@466
+000D77	RW 	@474
+000D84	RW 	@665
+000DA6	RW 	@666
+000DB0	RW 	@668
+000DB6	RW 	@829
+000DC0	RW 	@831
+000DCC	RW 	__RTTI__11BArchivable
+000DD4	RW 	@830
+000DE0	RW 	__RTTI__9DPOldData
+000DE8	RW 	__vt__9DPOldData
+000E08	RW 	dp_type_str									file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataType.cp"
+000E10	RW 	dp_title_str
+000E18	RW 	dp_prec_str
+000E20	RW 	dp_rtype_str
+000E28	RW 	@465
+000E33	RW 	@474
+000E3B	RW 	@498
+000E41	RW 	@516
+000E4F	RW 	@518
+000E5C	RW 	__RTTI__11BArchivable
+000E64	RW 	@517
+000E70	RW 	__RTTI__13DPOldDataType
+000E78	RW 	__vt__13DPOldDataType
+000E98	RW 	str_rec_key									file = "/boot/home/develop/dataplus/Data+ copy/DPFileConv/DPOldDataRec.cp"
+000EA0	RW 	str_rec_name
+000EA8	RW 	str_rec_numflds
+000EB0	RW 	str_rec_data
+000EB8	RW 	str_rec_valid
+000EC0	RW 	str_rec_status
+000EC8	RW 	str_rec_mkColor
+000ED0	RW 	@470
+000EDA	RW 	@554
+000EE0	RW 	@594
+000EED	RW 	@596
+000EFC	RW 	__RTTI__11BArchivable
+000F04	RW 	@595
+000F10	RW 	__RTTI__12DPOldDataRec
+000F18	RW 	__vt__12DPOldDataRec
+000F38	RW 	__global_destructor_chain					file = "common/global_destructor_chain.c"
+000F40	RW 	lastKey										file = "/boot/home/develop/dataplus/Data+ copy/DPGlobals/DPDataRec.cp"
+
+Import container "libbe.so"
+Current Version = 00000000, Old Implementation = 00000000
+000000	DS 	AddData__8BMessageFPCcUlPCvlbl
+000001	DS 	close_fd__5BFileFv
+000002	DS 	InitCheck__6BEntryCFv
+000003	DS 	FindBool__8BMessageCFPCclPb
+000004	DS 	FindInt16__8BMessageCFPCcl
+000005	DS 	AppActivated__12BApplicationFb
+000006	DS 	_ReservedPositionIO2__11BPositionIOFv
+000007	DS 	_ReservedPositionIO4__11BPositionIOFv
+000008	DS 	_ReservedPositionIO3__11BPositionIOFv
+000009	DS 	Unflatten__8BMessageFP7BDataIO
+00000A	DS 	__dt__9BMimeTypeFv
+00000B	DS 	SetType__9BNodeInfoFPCc
+00000C	DS 	Archive__12BApplicationCFP8BMessageb
+00000D	DS 	RemoveCommonFilter__7BLooperFP14BMessageFilter
+00000E	DS 	GetType__9BNodeInfoCFPc
+00000F	DS 	__ct__12BApplicationFPCc
+000010	DS 	ItemAt__5BListCFl
+000011	DS 	FindData__8BMessageCFPCcUllPPCvPl
+000012	DS 	__dt__5BFileFv
+000013	DS 	FindBool__8BMessageCFPCcl
+000014	DS 	_ReservedHandler4__8BHandlerFv
+000015	DS 	MakeEmpty__5BListFv
+000016	DS 	QuitRequested__12BApplicationFv
+000017	DS 	_ReservedHandler3__8BHandlerFv
+000018	DS 	AddInt32__8BMessageFPCcl
+000019	DS 	_ReservedArchivable1__11BArchivableFv
+00001A	DS 	_PhiloFile2__5BFileFv
+00001B	DS 	GetSize__9BStatableCFPx
+00001C	DS 	AddInt16__8BMessageFPCcs
+00001D	DS 	Seek__5BFileFxUl
+00001E	DS 	_ReservedHandler2__8BHandlerFv
+00001F	DS 	_OhSoStatable2__9BStatableFv
+000020	DS 	_OhSoStatable3__9BStatableFv
+000021	DS 	Write__5BFileFPCvUl
+000022	DS 	_ReservedApplication8__12BApplicationFv
+000023	DS 	__ct__5BListFl
+000024	DS 	GetSupportedSuites__12BApplicationFP8BMessage
+000025	DS 	_ReservedApplication7__12BApplicationFv
+000026	DS 	__dt__11BArchivableFv
+000027	DS 	_ReservedArchivable3__11BArchivableFv
+000028	DS 	Read__5BFileFPvUl
+000029	DS 	FindMessage__8BMessageCFPCclP8BMessage
+00002A	DS 	WriteAt__5BFileFxPCvUl
+00002B	DS 	ReadyToRun__12BApplicationFv
+00002C	DS 	_ReservedApplication1__12BApplicationFv
+00002D	DS 	__ct__6BEntryFPC9entry_refb
+00002E	DS 	Install__9BMimeTypeFv
+00002F	DS 	IsInstalled__9BMimeTypeCFv
+000030	DS 	__ct__8BMessageFUl
+000031	DS 	PostMessage__7BLooperFUl
+000032	DS 	AddCommonFilter__7BLooperFP14BMessageFilter
+000033	DS 	__ct__9BNodeInfoFP5BNode
+000034	DS 	__dt__5BNodeFv
+000035	DS 	_PhiloFile4__5BFileFv
+000036	DS 	_PhiloFile1__5BFileFv
+000037	DS 	_PhiloFile3__5BFileFv
+000038	DS 	_PhiloFile6__5BFileFv
+000039	DS 	validate_instantiation__FP8BMessagePCc
+00003A	DS 	_PhiloFile5__5BFileFv
+00003B	DS 	SetSize__5BFileFx
+00003C	DS 	__dl__8BMessageFPvUl
+00003D	DS 	Perform__11BArchivableFUlPv
+00003E	DS 	SetCommonFilterList__7BLooperFP5BList
+00003F	DS 	_ReservedApplication4__12BApplicationFv
+000040	DS 	Pulse__12BApplicationFv
+000041	DS 	_ReservedApplication6__12BApplicationFv
+000042	DS 	__ct__5BNodeFPC9entry_ref
+000043	DS 	FindRef__8BMessageCFPCclP9entry_ref
+000044	DS 	GetStat__5BNodeCFP4stat
+000045	DS 	__ct__9BNodeInfoFv
+000046	DS 	FindString__8BMessageCFPCcl
+000047	DS 	_ReservedApplication2__12BApplicationFv
+000048	DS 	__nw__8BMessageFUl
+000049	DS 	_ReservedApplication5__12BApplicationFv
+00004A	DS 	_ReservedApplication3__12BApplicationFv
+00004B	DS 	Position__5BFileCFv
+00004C	DS 	InitCheck__5BNodeCFv
+00004D	DS 	Quit__12BApplicationFv
+00004E	DS 	__ct__9entry_refFv
+00004F	DS 	__ct__9BMimeTypeFPCc
+000050	DS 	FindInt64__8BMessageCFPCcPx
+000051	DS 	__dt__9entry_refFv
+000052	DS 	AddInt64__8BMessageFPCcx
+000053	DS 	ConvertToMessage__7BLooperFPvl
+000054	DS 	AddMessage__8BMessageFPCcPC8BMessage
+000055	DS 	FindInt16__8BMessageCFPCclPs
+000056	DS 	__ct__6BAlertFPCcPCcPCcPCcPCc12button_width10alert_type
+000057	DS 	__dt__9BNodeInfoFv
+000058	DS 	SetPreferredApp__9BNodeInfoFPCc8app_verb
+000059	DS 	_ReservedDataIO4__7BDataIOFv
+00005A	DS 	DispatchMessage__12BApplicationFP8BMessageP8BHandler
+00005B	DS 	_ReservedLooper1__7BLooperFv
+00005C	DS 	_ReservedLooper4__7BLooperFv
+00005D	DS 	_ReservedLooper2__7BLooperFv
+00005E	DS 	_ReservedPositionIO1__11BPositionIOFv
+00005F	DS 	_ReservedDataIO1__7BDataIOFv
+000060	DS 	_ReservedDataIO2__7BDataIOFv
+000061	DS 	_ReservedLooper5__7BLooperFv
+000062	DS 	FindInt16__8BMessageCFPCcPs
+000063	DS 	ResolveSpecifier__12BApplicationFP8BMessagelP8BMessagelPCc
+000064	DS 	__ct__8BMessageFv
+000065	DS 	_ReservedLooper6__7BLooperFv
+000066	DS 	CountItems__5BListCFv
+000067	DS 	SendNotices__8BHandlerFUlPC8BMessage
+000068	DS 	_ReservedLooper3__7BLooperFv
+000069	DS 	_ReservedDataIO3__7BDataIOFv
+00006A	DS 	Go__6BAlertFv
+00006B	DS 	FindInt32__8BMessageCFPCcPl
+00006C	DS 	AddString__8BMessageFPCcPCc
+00006D	DS 	InitCheck__9BNodeInfoCFv
+00006E	DS 	Perform__12BApplicationFUlPv
+00006F	DS 	__ct__11BArchivableFv
+000070	DS 	Rename__6BEntryFPCcb
+000071	DS 	_ReservedArchivable2__11BArchivableFv
+000072	DS 	ScriptReceived__12BApplicationFP8BMessagelP8BMessagelPCc
+000073	DS 	set_stat__5BNodeFR4statUl
+000074	DS 	SetTo__9BNodeInfoFP5BNode
+000075	DS 	__dt__12BApplicationFv
+000076	DS 	AddItem__5BListFPv
+000077	DS 	ReadAt__5BFileFxPvUl
+000078	DS 	SetNextHandler__8BHandlerFP8BHandler
+000079	DS 	RemoveFilter__8BHandlerFP14BMessageFilter
+00007A	DS 	Type__9BMimeTypeCFv
+00007B	DS 	Run__12BApplicationFv
+00007C	DS 	task_looper__7BLooperFv
+00007D	DS 	ArgvReceived__12BApplicationFlPPc
+00007E	DS 	_RudeNode1__5BNodeFv
+00007F	DS 	_RudeNode3__5BNodeFv
+000080	DS 	_RudeNode2__5BNodeFv
+000081	DS 	_RudeNode5__5BNodeFv
+000082	DS 	MessageReceived__12BApplicationFP8BMessage
+000083	DS 	_RudeNode6__5BNodeFv
+000084	DS 	AboutRequested__12BApplicationFv
+000085	DS 	_RudeNode4__5BNodeFv
+000086	DS 	GetName__6BEntryCFPc
+000087	DS 	SetFilterList__8BHandlerFP5BList
+000088	DS 	__ct__5BFileFPC9entry_refUl
+000089	DS 	AddFilter__8BHandlerFP14BMessageFilter
+00008A	DS 	_OhSoStatable1__9BStatableFv
+00008B	DS 	AddBool__8BMessageFPCcb
+00008C	DS 	FindString__8BMessageCFPCcPPCc
+00008D	DS 	__dt__6BEntryFv
+
+Import container "libroot.so"
+Current Version = 00000000, Old Implementation = 00000000
+00008E	DS 	__nwa__FUl
+00008F	RW 	environ
+000090	DS 	exit
+000091	DS 	__dl__FPv
+000092	DS 	__register_fragment
+000093	DS 	memcpy
+000094	DS 	strcat
+000095	DS 	strcmp
+000096	DS 	strcpy
+000097	DS 	strlen
+000098	DS 	_call_init_routines_
+000099	RW 	argv_save
+00009A	DS 	release_sem
+00009B	DS 	find_thread
+00009C	DS 	__unregister_fragment
+00009D	DS 	real_time_clock_usecs
+00009E	RW 	__main_thread_id
+00009F	DS 	__nw__FUl
+0000A0	DS 	_thread_do_exit_notification
+0000A1	DS 	get_image_symbol
+0000A2	DS 	acquire_sem
+0000A3	DS 	snooze
+
+Removed unused TOC-reload slots:   0x00000000

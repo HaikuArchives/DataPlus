@@ -1,0 +1,16 @@
+# window positions
+pos:team:208,210,932,708
+pos:brkp:100,100,200,200
+# breakpoints
+__6DPDataP7BDataIO;162;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPData.cp;1;1;
+AddDataSet__10DPDataViewP9entry_ref;63;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPDataView.cp;0;1;
+ArchiveToTemp__12DPDataWindowb;213;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPDataWindow.cp;0;1;
+__11DPIconPanelG5BRectPCcUlUl;96;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPIconPanel.cp;0;1;
+LaunchApp__11DPIconPanelP8BMessage;198;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPIconPanel.cp;1;1;
+__11DPIconPanelG5BRectPCcUlUl;46;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPIconPanel.cp;0;1;
+MessageReceived__11DPDataPanelP8BMessage;195;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPDataPanel.cp;1;1;
+__9DPDataRecRC9DPDataRec;148;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPDataRec.cp;1;1;
+__6DPDataRC6DPData;70;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPData.cp;1;1;
+LaunchApp__11DPIconPanelP8BMessage;200;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPIconPanel.cp;1;1;
+Save__12DPDataWindowP10DPDataFileb;626;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPConsole/DPDataWindow.cp;1;1;
+AddData__10DPDataFilePC6DPDatab;101;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPGlobals/DPDataFile.cp;1;1;

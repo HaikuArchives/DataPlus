@@ -1,0 +1,7 @@
+# window positions
+pos:team:247,98,971,596
+pos:brkp:100,100,200,200
+# breakpoints
+ParseFile__10DPTextFile;220;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPWindow/DPTextFile.cp;1;1;
+__12DPDataWindowG5BRect;90;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPWindow/DPDataWindow.cp;1;1;
+OpenFile__12DPDataWindowP8BMessage;378;/boot/home/Software_Development/SWProjects/Full_Projects/Data+/DPWindow/DPDataWindow.cp;1;1;

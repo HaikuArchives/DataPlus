@@ -1,0 +1,78 @@
+---------------------------------------------------------------------
+Application Title:	
+	DataPlus Application Suite
+
+Author:
+	Stephen Wardlaw, M.D.
+	Medical Research & Development
+	Highrock
+	Lyme,CT 06371
+
+Contact & Bug Reports:
+	swardlaw@connix.com
+
+Version:
+	See below
+
+License:
+	Freeware
+
+Source code:
+	I will consider requests for pieces of the source code
+	for either personal or commercial purposes.
+---------------------------------------------------------------------
+
+Description:
+
+DataPlus is an application for the statistical and visual analysis of scientific data. It allows the detailed examination of relationships among elements within and across sets of scientific data by the use of interlinked statistical tables and graphs. It was originally designed for the analysis of medical laboratory data, but it will serve equally well in any other discipline.
+ 
+Version History:
+
+The roots of DataPlus go back to 1980, when I was programming the Apple II in 6502 assembly code. The concept was for a multilayed approach to analyzing laboratory or other data, where a combination of interacting statistical tables and graphs allow the user to more readily determine what the true interrelationships of the data actually were. The project was originally started so that I would have a set of analytical tools for my own use in my consulting and R&D business. I owe a great deal of my success to these tools, and now that my time is less limited, I wanted to polish them a little and pass them on for others to use.
+
+15 March, 2001
+	V 2.1.4 - Fixed some crashing and cosmetic bugs in console.
+07 March, 2001
+	V 2.02 - Added distribution analysis tool plus documentation.
+03 February, 2000
+	V 1.2.1 - Added selective unmarking & mark permissions
+25 January,  2000
+	Release to public of BeOS 1.01b1
+12 September, 1999
+	BeOS Beta 0.5a 
+16 August, 1999
+	First Alpha of integrated BeOS suite
+09 December, 1997
+	First BeOS version of regression tool
+24 January, 1994
+	Rewritten for Macintosh Metrowerks C++
+16 May, 1990
+	First version for Macintosh in Metrowerks Modula-2 as complete suite of tools
+06 November, 1987
+	Last IBM Version 6.0 (For regression data)
+02 August, 1980
+	First version for Apple IIe (For regression data)
+
+Why a BeOS Version?
+
+The BeOS implementation offers a unique way to assemble what amounts to a series of interacting statistical tools, all of which can modify the data of the others. The great graphical API and the ease of inter-process communication through BMessages allow a huge project like this one to be broken into a number of smaller "tools" which can stand on their own or be used as a "statistical productivity suite" such as this is becoming. 
+
+What's Ahead?
+
+Version 2.0:  Adding another statistical tool, either the distribution analysis or the multiple regression tool.
+
+Version 3.0: Adding whichever tool wasn't added in Version 2.0.
+
+See a trend here?
+
+There are a number of tools which are planned and will be added as soon as I can. I am adding them in approximately the order in which I need them, or when I am inspired to do them, and there is no set release schedule.
+
+Bugs and Bugging..
+
+Any bugs or requests for additions should be made to the author at the above address.
+
+Disclaimer:
+
+This is software, and as such, it will contain at least one bug, no matter how hard I try. The algorithms and their implementation are believed by the author to give accurate results, but NO GUARANTEES are offered. Users assume all responsibilities for their use of this application, and the author is not liable for any direct or consequential damages from the use of this product.
+
+That being said, I hope that you enjoy its use and go forth and make your fortunes.

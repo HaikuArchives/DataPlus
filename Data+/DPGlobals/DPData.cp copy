@@ -1,0 +1,346 @@
+/* ------------------------------------------------------------------ 
+
+	Title: DPData
+
+	Description:  Data structures and handling for Data+
+
+	Author :
+		Stephen Wardlaw, M.D.
+		Medical Research & Development
+		Highrock
+		Lyme, CT 06371
+
+	Edit History:	
+		16 August, 1999
+			Created
+		
+------------------------------------------------------------------ */ 
+
+#include "DPData.h"
+#include "DPDataRec.h"
+
+#include <InterfaceKit.h>
+
+const char fld_sel_str[8]		= "dpflds";
+const char data_sub_str[8]		= "dpsubs";
+const char set_name_str[8]		= "dpname";
+
+// -------------------------------------------------------------------
+// *  Static Methods             
+// -------------------------------------------------------------------
+BArchivable*
+DPData::Instantiate(BMessage* theArchive)
+{
+	if ( validate_instantiation(theArchive, "DPData")) {
+		return new DPData(theArchive); 
+	} else {
+		return NULL;
+	}
+}
+// -------------------------------------------------------------------
+// *  Constructors & Destructor             
+// -------------------------------------------------------------------
+DPData::DPData()
+{
+	mCurrRec = NULL;
+	::strcpy(mSetName,"Untitled Set");
+	mKey = DPDataRec::MakeKey();
+	mMinKey = HUGE_VAL;
+	mMaxKey = -HUGE_VAL;
+	mXField = -1;
+	mYField = -1;
+	mZField = -1;
+	mData = new BList(1000);
+	mFieldTypes = new BList(32);
+	mNumFields = 0;
+	mCombine = false;
+}
+
+DPData::DPData(BMessage* theArchive)
+{
+	mCurrRec = NULL;
+	mMinKey = HUGE_VAL;
+	mMaxKey = 0;
+	mXField = -1;
+	mYField = -1;
+	mZField = -1;
+	mData = new BList(1000);
+	mFieldTypes = new BList(32);
+	mNumFields = 0;
+	mCombine = false;
+		
+	// Find the set name
+	const char* name = theArchive->FindString(set_name_str);
+	if(name != NULL) {
+		::strcpy(mSetName,name);
+	} else {
+		::strcpy(mSetName,"Untitled Set");
+	}
+
+	// Collect the field types
+	int32 fldIndx = 0;
+	status_t status;
+	do {
+		BMessage* theMesg = new BMessage();
+		status = theArchive->FindMessage(data_type_str,fldIndx++,theMesg);
+		if(status == B_OK) {
+			BArchivable* theObj = instantiate_object(theMesg);
+			if(theObj != NULL) {
+				DPDataType* theType = cast_as(theObj,DPDataType);
+				if(theType != NULL) {
+					AddField(theType);
+				}
+			}
+		}
+		delete theMesg;
+	} while (status == B_OK) ;
+	
+	// Collect the data records
+	int32 index = 0;
+	do {
+		BMessage* theMesg = new BMessage();
+		status = theArchive->FindMessage(data_rec_str,index++,theMesg);
+		if(status == B_OK) {
+			BArchivable* theObj = DPDataRec::Instantiate(theMesg);
+			DPDataRec* theRec = cast_as(theObj,DPDataRec);
+			if(theRec != NULL) {
+				AddRecord(theRec);
+			}
+		}
+		delete theMesg;
+	} while (status == B_OK) ;
+	
+	// If this is a data subset, we set the field designators
+	bool isWhole = theArchive->FindBool(data_sub_str);
+	if(!isWhole) {
+		mXField = 0;
+		if(mNumFields > 1) mYField = 1 ;
+		if(mNumFields > 2) mZField = 2 ;
+	}
+}
+		
+DPData::~DPData()
+{
+	for(int32 fld = 0; fld < mData->CountItems(); fld++) {
+		DPDataRec* theRec = (DPDataRec*)mData->ItemAt(fld);
+		delete theRec;
+	}
+	delete mData;
+	for(int32 fld = 0; fld < mFieldTypes->CountItems(); fld++) {
+		DPDataType* theFld = (DPDataType*)mFieldTypes->ItemAt(fld);
+		delete theFld;
+	}
+	delete mFieldTypes;
+}		
+// -------------------------------------------------------------------
+// *  Public Methods             
+// -------------------------------------------------------------------
+void
+DPData::AddRecord(DPDataRec* theRec)
+{
+	if(theRec->Key() > mMaxKey) {
+		mMaxKey = theRec->Key();
+	} else if(theRec->Key() < mMinKey) {
+		mMinKey = theRec->Key();
+	}
+	mData->AddItem(theRec);
+	mCurrRec = theRec;
+}
+// -------------------------------------------------------------------
+// NOTE!! If not 'deep', only the selected fields are archived
+status_t
+DPData::Archive(BMessage* theArchive, bool deep) const
+{
+	// Only add fields sequentially
+	int16 shallowFlds = 0;
+	if(mXField >= 0) {
+		shallowFlds++ ;
+		if(mYField >= 0) {
+			shallowFlds++ ;
+			if(mZField >= 0) {
+				shallowFlds++ ;
+			}
+		}
+	}
+	if(!deep && shallowFlds == 0) {
+		char aStr[64];
+		::strcpy(aStr,"No Data Fields Were Selected For ");
+		::strcat(aStr,mSetName);
+		BAlert* theAlert = new BAlert("archAlert",aStr,"OK");
+		theAlert->Go();
+		return B_ERROR;
+	}
+	
+	theArchive->AddString("class","DPData");
+	// Add the name
+	theArchive->AddString(set_name_str,mSetName);
+	// Keep track of whether this is a subset
+	theArchive->AddBool(data_sub_str,deep);
+	
+	// Add the field types as a set of messages
+	if(deep) {	// Add all fields
+		for(int32 fld = 0; fld < mFieldTypes->CountItems(); fld++) {
+			DPDataType* theFld = (DPDataType*)mFieldTypes->ItemAt(fld);
+			if(theFld != NULL) {
+				BMessage* fldMesg = new BMessage(DPDataType::fld_code);
+				theFld->Archive(fldMesg);
+				theArchive->AddMessage(data_type_str,fldMesg);
+				delete fldMesg;
+			}
+		}
+	// The x,y,z fields must be added in order	
+	} else {	// If a copy of only the xyz fields
+		if(mXField >= 0) {
+			DPDataType* theFld = (DPDataType*)mFieldTypes->ItemAt(mXField);
+			if(theFld != NULL) {
+				BMessage* fldMesg = new BMessage(DPDataType::fld_code);
+				theFld->Archive(fldMesg);
+				theArchive->AddMessage(data_type_str,fldMesg);
+				delete fldMesg;
+			}
+		}
+		if(mYField >= 0) {
+			DPDataType* theFld = (DPDataType*)mFieldTypes->ItemAt(mYField);
+			if(theFld != NULL) {
+				BMessage* fldMesg = new BMessage(DPDataType::fld_code);
+				theFld->Archive(fldMesg);
+				theArchive->AddMessage(data_type_str,fldMesg);
+				delete fldMesg;
+			}
+		}
+		if(mZField >= 0) {
+			DPDataType* theFld = (DPDataType*)mFieldTypes->ItemAt(mZField);
+			if(theFld != NULL) {
+				BMessage* fldMesg = new BMessage(DPDataType::fld_code);
+				theFld->Archive(fldMesg);
+				theArchive->AddMessage(data_type_str,fldMesg);
+				delete fldMesg;
+			}
+		}
+	}
+	
+	// Add the records
+	for(int32 rec = 0; rec < mData->CountItems(); rec++) {
+		DPDataRec* theRec = (DPDataRec*)mData->ItemAt(rec);
+		if(theRec != NULL) {
+			BMessage* recMesg = new BMessage(DPDataRec::fld_code);
+			// If deep, archive everything
+			if(deep) {
+				theRec->Archive(recMesg,deep);
+				
+			} else {
+				// Make a second rec with only selected fields added
+				DPDataRec* copyRec = new DPDataRec(theRec,mXField,mYField,mZField);
+				copyRec->Archive(recMesg,deep);
+				delete copyRec;
+			}
+			theArchive->AddMessage(data_rec_str,recMesg);
+			delete recMesg;
+		}
+	}
+	return B_OK;
+}
+// -------------------------------------------------------------------
+// Find a record by its key
+bool	
+DPData::FindRecord(record_key recKey)
+{
+	if(recKey >= mMinKey && recKey <= mMaxKey) {
+		for(int32 indx = 0; indx < mData->CountItems(); indx++) {
+			mCurrRec = (DPDataRec*)mData->ItemAt(indx);
+			if(mCurrRec->Key() == recKey) {
+				return true;
+			}
+		}
+	}
+	mCurrRec = NULL;
+	return false;
+}
+// -------------------------------------------------------------------
+bool
+DPData::FindRecord(const char* recName, int16 index)
+{
+	for(int32 indx = 0; indx < mData->CountItems(); indx++) {
+		mCurrRec = (DPDataRec*)mData->ItemAt(indx);
+		if(::strcmp(recName,mCurrRec->RecordName()) == 0 && index-- == 0) {
+			return true;
+		}
+	}
+	mCurrRec = NULL;
+	return false;
+}
+// -------------------------------------------------------------------
+bool	// Find a record by its sequence
+DPData::FindRecord(int32 recNum)
+{
+	if(recNum >= 0) {
+		mCurrRec = (DPDataRec*)mData->ItemAt(recNum);
+	} else {
+		mCurrRec = NULL;
+	}
+	return mCurrRec != NULL;
+}
+// -------------------------------------------------------------------
+void
+DPData::SetXYZFields(int16 xFld, int16 yFld, int16 zFld)
+{
+	int32 numFlds = mFieldTypes->CountItems();
+	// Ensure that no two fields are the same
+	if(xFld >= 0 && xFld == yFld) {
+		yFld = -1;
+	}
+	if(yFld >= 0 && yFld == zFld) {
+		zFld = -1;
+	}
+	if(xFld >= 0 && xFld < numFlds) {
+		mXField = xFld;
+	} else {
+		mXField = -1;
+	}
+
+	if(yFld >= 0 && yFld < numFlds) {
+		mYField = yFld;
+	} else {
+		mYField = -1;
+	}
+	
+	if(zFld >= 0 && zFld < numFlds) {
+		mZField = zFld;
+	} else {
+		mZField = -1;
+	}
+}
+// -------------------------------------------------------------------
+bool
+DPData::XValue(float &val)
+{
+	if(mCurrRec != NULL && mXField >= 0) {
+		return mCurrRec->Value(mXField,val);
+	} else {
+		val = 0.0;
+		return false;
+	}
+}
+// -------------------------------------------------------------------
+bool
+DPData::YValue(float &val)
+{
+	if(mCurrRec != NULL && mYField >= 0) {
+		return mCurrRec->Value(mYField,val);
+	} else {
+		val = 0.0;
+		return false;
+	}
+}
+// -------------------------------------------------------------------
+bool
+DPData::ZValue(float &val)
+{
+	if(mCurrRec != NULL && mZField >= 0) {
+		return mCurrRec->Value(mZField,val);
+	} else {
+		val = 0.0;
+		return false;
+	}
+}
+// -------------------------------------------------------------------

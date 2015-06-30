@@ -1,0 +1,7 @@
+Multiple_Regression Notes
+
+* A file reference is sent instead of the data. If the DP data is in the form of a multiple set, it is combined into a file (how). [or should only the first set be analyzed?] This gets back to the basic question as to how we combine sets..
+
+-- MR cannot be invoked unless only one group, or if combined..
+
+* If the X,Y,Z fields are checked, a MR using the residuals of thehose fields are sequentially run, otherwise a matrix of all fields is run. 

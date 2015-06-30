@@ -1,0 +1,33 @@
+Warning : variable 'localStr1' is not initialized before being used
+URealFmt_Utils.c line 45    char   localStr1[max_len + 1];
+Warning   : Link Warning : ignored 'initialize_before' (descriptor) in libroot.so
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'terminate_after' (descriptor) in libroot.so
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/Data+ copy/DPDistribution/DPDistWindow.cpp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/Data+ copy/DPDistribution/DPDistFrame.cp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Graphing/WGStdGraph.cp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Graphing/WGAbscissa.cp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Graphing/WGOrdinate.cp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Graphing/WGAxisEdit.cp
+Previously defined in libbe.so
+Warning   : Link Warning : ignored 'ValueToColor(long)' (descriptor) in /boot/home/develop/
+dataplus/SWClasses/Utilities/U_Conversions.c
+Previously defined in libtracker.so
+Warning   : Link Warning : ignored 'ColorToValue(rgb_color)' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Utilities/U_Conversions.c
+Previously defined in libtracker.so
+Warning   : Link Warning : ignored 'BAutolock::~BAutolock()' (descriptor) in /boot/home/
+develop/dataplus/SWClasses/Interface/WColorControl.cp
+Previously defined in libbe.so
